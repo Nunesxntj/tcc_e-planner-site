@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+main {
+  background-color: #E8E8E8;
+}
+header {
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  padding-left: 32px;
+  justify-content: space-between;
+  padding-right: 32px;
+  background-color: #E8E8E8;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 16px;
+}
+
+
+.nav-list {
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s;
+  color: #000000;
+}
+
+.nav-list:hover {
+  color: #02cb7f;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #02cb7f;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #50af8b;
+}
+
+main {
+  height: 100%;
+}
+
+footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  gap: 32px;
+  height: 400px;
+  background-image: url('../IMG/background-gust.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 150px;
+}
+
+.footer__navigation {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer__navigation a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.footer__contacts svg {
+  color: #000000;
+top: 10px;
+}
+
+.footer__contacts span {
+  color: #000000;
+  font-size: 120%;
+}
+
+.footer__contacts span {
+  margin-bottom: 5px;
+}
+
+
+
+
+.politicas p{
+  display: flex;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 120%;
+  justify-content:end;
+  align-items:baseline;
+  left: 20%;
+  
+}
+
+.linha {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgb(51, 51, 51);
+};
+
+
+.politicas a {
+  margin-right: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.lista-icons {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+.rodape   {
+  color: rgb(245, 245, 245);
+  padding-top: 24px;
+  z-index: 20;
+  width: 100%;
+  background-image: url('../IMG/background-gust.jpg');
+  }
+
+  .rodape-2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 1;
+    background-image: url('../IMG/background-gust.jpg');
+    };
+
+    .linha {
+      width: 100%;
+      height: 1px;
+      border: none;
+      background-color: rgb(51, 51, 51);
+    };
+
+.lista-icons li {
+  margin-right: 10px;
+}
+
+
+.sidebar {
+  width: 100%;
+  height: 150px; /* Altura desejada da barra lateral */
+  background-color:rgb(187, 183, 183);
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.sidebar.open {
+  transform: translateY(0%);
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+border-radius: 50%;
+border: 2px solid black;
+background-color: #02cb7f;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-toggle img {
+  width: 50%;
+}
+
+.sidebar-toggle:hover {
+  background-color: #777777;
+}
+
+.sidebar-toggle span {
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.sidebar.open .sidebar-toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.sidebar.open .sidebar-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.sidebar.open .sidebar-toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}

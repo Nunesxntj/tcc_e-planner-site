@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Hammersmith+One&family=Poppins:wght@900&family=Sigmar&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+
+
+/* Barra de navegação  */
+
+.container {
+    width: 100%;
+    
+    }
+    
+    header,  .navbar{
+    background-color: #2C3C51F5 ;
+    
+    }
+    
+    #nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+    
+    #logo {
+    width: 50px;
+    }
+    
+    .navbar-brand {
+    padding: 0;
+    color: white;
+  margin-top: 0.5%;
+  font-weight: bold;
+  margin-left: 1%;
+    }
+    
+    .navbar-brand:hover {
+    color: white;
+    }
+    
+    #navbar-links a {
+    margin-left: 1%;
+    color: white;
+    height: 60px;
+    left: 100px;
+    top: 90px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align:end;
+    
+    
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+    }
+    
+    
+
+     /*Configurações de grid*/
+
+   
+     
+
+     .grid-container{
+        display: grid;
+        grid-template-columns: 100% 100%; 
+        align-items: center;
+      
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        
+        
+      
+     }
+
+    
+     /*Imagem do celular*/
+.img-fluid {
+    width: 300%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+   
+}
+
+
+h1 {
+    width: 90%;
+    padding: 10%;
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 130px;
+    text-align: center;
+    color: #0458F2;
+
+
+    
+    }
+    h2 {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    
+    }
+
+
+
+    .titulo {
+      font-size: 150%;
+      margin-top: -17%;
+      color: #02CB7F;
+    }
+    
+    p {
+    font-family: 'Hammersmith One', sans-serif;
+    width: 90%;
+    margin-top: -70px;
+    font-weight: 100;
+    font-size: 300%;
+    line-height: 150%;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+   
+    color: #000000; 
+    }
+
+    /*Estilização da parte do botão de baixar app*/
+    
+    .listra {
+        
+        background-color: #2C3C51;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        left: 0px;
+        top: 590px;
+        background:#2C3C51;
+        padding: 70px;
+        }
+
+
+        .duas-imagens {
+          position: relative;
+        }
+
+        /*Estilização do botão de baixar app*/
+        .btn-outline {
+            width: 18%;
+            display: flex;
+            justify-content: center;
+            height: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+            font-weight: 500px;
+            font-size: 20px;
+            line-height: 30px;
+            border-radius: 90px;
+            background-color: white;
+            color: #2C3C51;
+            
+            
+             }
+
+             .btn-outline:active {
+              background-color: rgb(232, 232, 232);
+             }
+
+             .btn-outline:hover {
+              background-color: rgb(232, 232, 232);
+             }
+
+   /*Estilização do carrossel*/
+
+  
+    
+   
+
+    .slider {
+    margin: 0 auto;
+    height:500px;
+ 
+    width: 200%; 
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: rgb(232, 232, 232);
+    }
+
+    .slides {
+        width: 200%;
+        height: 00px;
+        display: flex;
+        
+    }
+
+    .slides input {
+        display: none;
+    }
+    
+    .slide {
+        width: 10%;
+        height: 1370px;
+        position: static;
+    }
+
+    .slide img {  
+        width: 100%;
+        height: 400px;
+       
+    }
+
+    .manual-navigation {
+        position:absolute;
+        width: 100%;
+        margin-top: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .manual-btn {
+      display: none;
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    .manual-btn:hover{
+        background-color: rgb(0, 0, 0);
+    }
+    
+    #radio1:checked ~ .primeiro{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .primeiro{
+        margin-left: -25%;
+    }
+
+    
+    
+    #radio3:checked ~ .primeiro{
+        margin-left: -50%;
+    }
+
+    #radio4:checked ~ .primeiro{
+      margin-left: -75%;
+  }
+
+  #radio5:checked ~ .primeiro{
+    margin-left: -100%;
+}
+
+/*imagem que aparecerá na tela responsiva*/
+
+    .imagem-alternativa {
+      display: none;
+    }
+    
+    /*#radio4:checked ~ .primeiro{
+        margin-left: -75%;
+    }*/
+    
+    /*Navegação automática*/
+
+    .navigation-auto div{
+       
+        padding: 5px;
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    .navigation-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 47%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    /* Deixar o botão preenchido, quando o campo estiver ativo*/
+    
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: rgb(232, 232, 232);
+    }
+    
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: rgb(232, 232, 232);
+    }
+    
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color: rgb(232, 232, 232);
+    }
+    
+    /*#radio4:checked ~ .navigation-auto .auto-btn4{
+        background-color: black;
+    }*/
+
+
+   .button-carrossel {
+    display: none;
+   }
+   .next-button-carrossel {
+    display: none;
+   }
+
+    
+
+    /*Configuração da parte "Sobre"*/
+
+    /*Estilização em grid*/
+
+    
+    
+
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 100% 100% 100% 100% ;
+        gap: 10px;
+        padding: 10px;
+       justify-content: center;
+    }
+
+    .img-visao img {
+      width: 100%;
+      height: auto;
+      
+    }
+
+   
+     
+
+    .about p{
+        font-size: 50%;
+      padding: 100%;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about h2 {
+      font-size: 200%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+  
+
+
+    /*Carrossel dos desenvolvedores*/
+
+     
+
+  
+  
+ 
+
+ 
+
+ 
+
+  .next-button {
+    right: 0;
+    
+   
+  }
+
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* .prev-button, .next-button {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+ 
+    color: black;
+   
+    cursor: pointer;
+  }
+
+  .prev-button-1, .next-button-1 {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+ display: none;
+    color: black;
+   
+    cursor: pointer;
+  } */
+
+  .prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+  
+
+  .carousel-images img {
+    border-radius: 100%;
+    width: 120%;
+  
+  }
+
+
+/*Estilização para o card em que apareceram os links
+das redes de cada desenvolvedor*/
+  .card {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    width: 10%;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    align-items: center;
+  
+    
+}
+
+.card:hover {
+  display: block;
+}
+  
+  
+.card a {
+  color: #000000;
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.card a span {
+  margin-right: 10px;
+}
+
+.card a i {
+  font-size: 54px;
+}
+  .carousel {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: first baseline;
+
+    
+    
+  }
+  
+  .carousel-images {
+    display: flex;
+    width: 188%;
+    height: 100px;
+    overflow: hidden;
+    flex-direction: row;
+ 
+
+    
+    
+  }
+
+  .image-container:hover{
+    width: 102%;
+
+  }
+
+  .caption h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 240% ;
+  }
+
+  .caption-2 p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 190% ;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px ;
+    
+  
+  }
+
+  .image-container {
+    width: 20%;
+    height: 100px;
+    flex: 1 0 100%;
+    max-width: 400px;
+    margin-right: 10px;
+    scroll-snap-align: start;
+ 
+    
+  }
+  .image-container:last-of-type {
+    margin-right: 0;
+  }
+  
+  
+
+  #img-2:checked ~ #img-1 {
+    margin-left: -25%;
+}
+
+.carousel-images {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+.image-container {
+  width: 25%;
+  max-width: 300px; /* adjust this value as needed */
+  
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+
+
+/*Estilização dos icones do rodapé*/
+
+.grid-container-5 {
+  display: grid;
+  background-color: #2C3C51;
+  grid-template-columns: 100% 100% ;
+  border-bottom: solid #000000;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  padding: 1% 3% 0 10% ;
+}
+
+.logo {
+  display: flex;
+  padding: 1%;
+  color: white;
+}
+
+.logo:hover {
+  color: white;
+  }
+.logo a {
+  font-size: 180%;
+  text-decoration: none;
+ 
+}
+
+/*Configurações do rodapé*/
+
+.grid-container-6 {
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  background-color: #2C3C51;
+  height: 600px;
+}
+
+/*Links*/
+.list-group-item {
+  color: white;
+  margin-top: 4%;
+  font-size: 170%;
+  text-decoration: none;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+
+/*Serviços do site*/
+
+
+
+.servicos a {
+  text-decoration: none;
+ 
+  font-size: 100%;
+  color: white;
+  text-align: justify;
+  display:flex;
+  justify-content: end;
+}
+
+.servicos p {
+  font-size: 170%;
+  margin-top: 5%;
+  color: white;
+  text-align: justify;
+  display:flex;
+  justify-content: end;
+}
+
+/*Estilização do chat de email*/
+
+.form-control input {
+  height: 39%;
+  width: 100%;
+}
+
+/*estilização do botão enviar email*/
+
+.btn-light a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.btn-light {
+  width: 40%;
+  height: 40px;
+  padding: 1px;
+}

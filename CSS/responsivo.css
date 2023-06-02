@@ -1,0 +1,416 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Hammersmith+One&family=Poppins:wght@900&family=Sigmar&display=swap');
+
+
+@media screen and (max-width: 450px) {
+    .container {
+      display: block;
+      width:10%;
+    }
+    .grid-container{
+        display:block;
+        align-items: center;
+       background-image: none;
+        
+      
+     }
+    h1 {
+      font-size: 360%;
+      line-height: 150px;
+      text-align:center;
+      width: 100%;
+     
+    }
+  
+    
+    .img-fluid {
+      width: 100%;
+      height: 380px;
+      display: flex;
+    }
+    
+  
+  
+  p {
+    font-size: 170%;
+    width:100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1%;
+  }
+
+  
+
+  #logo {
+    max-width: 10%;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+
+    .listra button{
+      position:absolute;
+      top: 530px;
+      left: 160px;
+      width: 30%;
+      height: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+      border-radius: 90px;
+      text-align: center;
+      background-color:white;
+      color:#2C3C51;
+      display: none;
+      }
+  
+      .container {
+        width: 50%;
+        }
+        header,  .navbar{
+          background-color: #2C3C51F5 ;
+          width: 100%;
+          
+          }
+  
+          .slider {
+            width: 100%;
+            height: 400px;
+          }
+  
+          .slide {
+            width: 100%;
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+          }
+          
+          .slide img {
+            width: 100%;
+            height:25%;
+          }
+
+          #radio1:checked ~ .primeiro{
+            margin-left: 0;
+        }
+        
+        #radio2:checked ~ .primeiro{
+            margin-left: -37%;
+        }
+        
+        #radio3:checked ~ .primeiro{
+            margin-left: -65%;
+        }
+
+        #radio4:checked ~ .primeiro{
+          margin-left: -100%;
+      }
+
+        .manual-navigation {
+          margin-top: 190%;
+        }
+
+       
+        .tela1 {
+              flex-wrap: wrap;
+            }
+          
+            .col-md-6 {
+              flex-basis: 100%;
+              text-align: center;
+            }
+          
+            .col-md-6:nth-child(2) {
+              order: -1;
+            }
+
+            .about .col-md-6 {
+              width: 50%;
+            }
+
+            .about p {
+              width: 100%;
+            font-size: 135%;   
+                              }
+
+            .about h2{
+                                font-size: 200%;
+                                
+                              }
+           
+          
+            .grid-container-3 {
+              grid-template-columns: 100%;
+            }
+
+            .grid-container-6 {
+              grid-template-columns: 100% 100% 100%;
+    grid-template-rows: auto auto auto;
+    gap: 0;
+              }
+              .grid-container-5 {
+                grid-template-columns: 100%;
+              }
+             
+              .carousel-images img {
+                width: 200px;
+                height: auto;
+         
+                transform: translateX(-50%)
+              }
+              
+
+.caption h2 {
+  display: flex;
+  font-size: 150% ;
+}
+
+.caption-2 p {
+  display: flex;
+  font-size: 100% ;
+}
+              
+              
+              .carousel-buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+
+        }
+
+        .prev-button, .next-button {
+          display: none;
+        }
+
+
+        .next-button-1, .prev-button-1{
+          position: absolute;
+          top: 50%;
+          z-index: 1;
+        }
+        
+        .next-button-1 {
+          right: 0;
+        }
+        
+        .prev-button-1{
+          left: 0;
+        }
+        
+
+
+        @media (max-width: 400px) {
+          #contato {
+            padding: 20px;
+          }
+          
+          .col {
+            width: 100% !important;
+          }
+          
+          .form-control {
+            width: 100%;
+          }
+          
+          .button-enviar {
+            text-align: center;
+          }
+
+          .imagem-alternativa {
+            display: none;
+          }
+          .imagem-padrão {
+            display: block;
+          }
+
+          .carousel {
+            width: 100%;
+            height: 390px;
+           
+            } */
+            
+            /*Imagem visão*/
+
+           
+            .image-container {
+            width: 50%;
+            transform: translateX(-50%);
+            margin-right: 100px; /* adicione esta linha para definir a margem */
+      
+}
+            
+            .image-container:first-of-type {
+            display: block;
+            }
+            
+       
+
+            .grid-container-5 {
+              grid-template-columns: 1fr;
+            }
+            .logo img {
+              width: 5%;
+            }
+            .logo a {
+              font-size: 130%;
+            }
+            .icons svg {
+              width: 15%;
+            }
+
+            .grid-container-5 {
+              grid-template-columns: 1fr;
+              row-gap: 10px;
+              justify-content: center;
+            }
+            .icons {
+              display: flex;
+              justify-content: space-evenly;
+              color: white;
+            }
+
+            .bi-chat-left-dots-fill {
+              display: none;
+            }
+
+           /* Ajustar o tamanho do formulário de contato */
+  #contato .col-12.col-md-4:nth-child(2) {
+    width: 100%;
+  }
+
+  /* Ajustar a largura dos elementos de formulário */
+  #contato input,
+  #contato textarea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Alinhar o botão Enviar à direita */
+  .button-enviar {
+    text-align: right;
+    width: 80%;
+   height: 2px;
+  }
+
+  /* Colocar as informações de contato na vertical */
+  .servicos p {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .links a{
+    font-size: 100%;
+  }
+
+  .links {
+    font-size: 70%;
+    width: 50%;
+  }
+
+  .grid-container-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .img-visao {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+
+  .carousel-container {
+    max-width: 400px;
+   
+  }
+  
+  .carousel {
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .image-container img {
+    width: 5%;
+    height: auto;
+  }
+  
+
+      }
+      
+
+      
+      @media screen and (max-width: 480px) {
+        .image-container {
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 480px) {
+        .text-footer {
+        display: none;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+      @media screen and (min-width: 800px) and (max-width: 1300px) {
+
+
+        h1 {
+          font-size: 639%;
+          line-height: 150px;
+          text-align:center;
+          width: 100%;
+          margin-top: 10%;
+         
+        }
+
+        p {
+          font-size: 250%;
+          width:100%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          margin-top: 1%;
+        }
+      
+        
+      }
+
+         
+            
+              
+                
+          
+          
+         
+  
+         
+  
+ 

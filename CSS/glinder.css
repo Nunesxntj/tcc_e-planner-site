@@ -1,0 +1,117 @@
+/* Estilos para o carrossel Glider.js */
+.glider-contain {
+    position: relative;
+    width: 100%;
+  }
+  
+  .glider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Remover a barra de rolagem no Firefox */
+    -ms-overflow-style: none; /* Remover a barra de rolagem no IE e Edge */
+    padding-bottom: 7%;
+    background-color: #D9D9D9;
+}
+  
+  .glider::-webkit-scrollbar {
+    display: none; /* Remover a barra de rolagem no Chrome e Safari */
+  }
+  
+  .glider > div {
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    height: 300px; /* Altura do slide */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Alinhar o nome da imagem abaixo da imagem */
+    font-size: 20px; /* Diminuir a fonte */
+  }
+  
+  
+
+/* Estilos para os dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dots button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 0;
+  }
+  
+  .dots button.active {
+    background: #000;
+  }
+  
+  /* Definir tamanho para os dots */
+  .glider-dots {
+    height: 10px;
+  }
+  
+  
+  .image-name {
+    margin-top: 5px; /* Adicionar um pequeno espaço entre a imagem e o nome */
+    font-size: 24px;
+    left: -5%;
+}
+.image-description {
+    margin-top: 5px; /* Adicionar um pequeno espaço entre o nome e a descrição */
+    font-size: 18px; /* Ajustar o tamanho da fonte da descrição */
+    text-align: center; /* Centralizar o texto da descrição */
+}
+
+
+.glider--container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.glider-f {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Remover a barra de rolagem no Firefox */
+  -ms-overflow-style: none; /* Remover a barra de rolagem no IE e Edge */
+  background-color: #D9D9D9;
+}
+
+.glider-f::-webkit-scrollbar {
+  display: none; /* Remover a barra de rolagem no Chrome e Safari */
+}
+
+.glider-f > div {
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+  height: 100%; /* Altura do slide */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Alinhar o nome da imagem abaixo da imagem */
+  font-size: 20px; /* Diminuir a fonte */
+}
+
+  
+  @media screen and (min-width: 768px) {
+    .glider > div {
+      flex-basis: calc(100% / 3); /* Divide o espaço em 3 para exibir 3 imagens por vez */
+    }
+  }
+  
+  /* Remover as bordas das contents */
+  .glider > div {
+    border: none;
+  }
+  

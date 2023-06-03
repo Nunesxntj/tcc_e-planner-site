@@ -113,9 +113,9 @@
           <div class="texxt active" id="text-0">aaaaaaaaa</div>
           <div class="texxt" id="text-1">bbbbbbbbb</div>
           <div class="texxt" id="text-2">
-            <p>Nosso aplicativo oferece recursos para controlar suas finanças de forma eficiente.</p>
-            <p>Informe seu salário, cadastre gastos diários, edite categorias e acompanhe sua disponibilidade para novos gastos.</p>
-            <p>Além disso, você pode cadastrar despesas futuras e dividir sua renda por categorias.</p>
+            <p>.Nosso aplicativo oferece recursos para controlar suas finanças de forma eficiente.</p>
+            <p>.Informe seu salário, cadastre gastos diários, edite categorias e acompanhe sua disponibilidade para novos gastos.</p>
+            <p>.Além disso, você pode cadastrar despesas futuras e dividir sua renda por categorias.</p>
           </div>
         </div>
       </div>
@@ -142,6 +142,63 @@
           });
         });
       </script>
+      
+
+      <script>
+        function revealTextOnScroll() {
+          var parallaxTexts = document.querySelectorAll('.parallax-text');
+      
+          parallaxTexts.forEach(function(text) {
+            if (isElementInViewport(text)) {
+              text.classList.add('reveal');
+            }
+          });
+        }
+      
+        function isElementInViewport(element) {
+          var rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      
+        window.addEventListener('DOMContentLoaded', function() {
+          revealTextOnScroll();
+        });
+      
+        window.addEventListener('scroll', function() {
+          revealTextOnScroll();
+        });
+      </script>
+      <div class="grid-container-3 about" id="sobre">
+        <div class="img__container">
+          </div>
+        <div class="sobre__col">
+          <div class="col text">
+            <div class="parallax-text">
+              <h2>Quem somos</h2>
+              <p>Nós somos um grupo de desenvolvedores apaixonados por educação financeira e por tecnologia, e estamos comprometidos em ajudar as pessoas a melhorar suas finanças pessoais por meio do nosso aplicativo.</p>
+            </div>
+          </div>
+      
+          <div class="col text">
+            <div class="parallax-text">
+              <h2>Visão</h2>
+              <p>Acreditamos que todos têm o direito de ter acesso à informação e recursos necessários para tomar decisões financeiras informadas e inteligentes.</p>
+            </div>
+          </div>
+      
+          <div class="col text">
+            <div class="parallax-text">
+              <h2>Tecnologia</h2>
+              <p>Utilizamos tecnologias de ponta e recursos interativos para garantir que nossos usuários possam aprender de maneira eficaz e agradável.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       
 
 <div class="glider-contain">

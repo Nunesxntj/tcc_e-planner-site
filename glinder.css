@@ -14,7 +14,7 @@
 
 .glider img {
   padding-bottom: 10px;
-  padding-left: 150px;
+  padding-left: 190px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,8 +116,9 @@
   text-align: center;
 }
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
+
 .mid__container {
-  width: 120%;
+  width: 150%;
   background-color: #2c3c51;
   transform: rotate(-4deg) translateX(-10%);
   transform-origin: left top;
@@ -127,17 +128,16 @@
   height: 100vh; /* Definir altura total da tela */
 }
 
-
 .slider-wrap {
   transform: rotate(4deg);
-  width: 200px;
+  width: 250px;
   height: 400px;
   margin: 0 20%; /* Centralizar horizontalmente */
   position: relative; /* Adicionado */
-  
 }
 
 .slider {
+  width: 170%;
   overflow-x: scroll;
 }
 
@@ -147,20 +147,19 @@
 
 .slide {
   float: left;
-  width: 210px;
-  height: 400px;
-  background-position: -100px 0;
+  width: 300px;
+  height: 590px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-
+  background-repeat: no-repeat;
   transition: transform 0.6s ease; /* Adicionado */
 }
 
 .slide img {
-  max-width: 150%; /* Remover a restrição de largura */
+  max-width: 170%; /* Remover a restrição de largura */
   max-height: none; /* Remover a restrição de altura */
   z-index: 1; /* Colocar a imagem na frente */
   position: absolute; /* Adicionado */
@@ -180,18 +179,19 @@
 
 #slide-0 {
   background-size: cover;
-  background-position: center bottom;
-  background-image: url(IMG/iPhone\ 8\ -\ 93.png)
+  background-position: center;
+  background-image: url(IMG/iPhone\ 8\ -\ 93.png);
 }
 
 #slide-1 {
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-image: url(IMG/iPhone\ 8\ -\ 82.png);
 }
 
 #slide-2 {
   background-size: cover;
+  background-position: left;
   background-position: center bottom;
   background-image: url(IMG/iPhone\ 8\ -\ 89\ \(1\).png);
 }
@@ -227,40 +227,43 @@
   transition: 0.3s ease;
 }
 
-
 .slider::-webkit-scrollbar {
   display: none; /* Remover a barra de rolagem no Chrome e Safari */
 }
-.texxt-container {
+
+.texxt-container2 {
   display: none;
 }
+
 .texxt {
-  font-family: 'Inet', sans-serif;
-  transform: rotate(4deg) translateX(-10%);
+  font-family: 'Inter', sans-serif; /* Substitua 'Arial' pela fonte desejada */
   font-size: 26px;
   color: white;
   display: none;
-  width: 100%;
+  width: 80%;
   height: auto;
-  animation: slide-in 0.5s forwards; /* Adiciona animação de surgimento */
-  opacity: 0; /* Define a opacidade inicial como 0 */
+  animation: slide-in 0.5s forwards;
+  opacity: 0;
+}
+
+.texxt p {
+  margin-bottom: 40px;
 }
 
 .texxt.active {
   display: block;
-  animation: slide-in 0.5s forwards; /* Adiciona animação de surgimento */
 }
 
 #text-0 {
-  animation-delay: 0.2s; /* Delay para o primeiro texto */
+  animation-delay: 0.2s;
 }
 
 #text-1 {
-  animation-delay: 0.4s; /* Delay para o segundo texto */
+  animation-delay: 0.4s;
 }
 
 #text-2 {
-  animation-delay: 0.6s; /* Delay para o terceiro texto */
+  animation-delay: 0.6s;
 }
 
 @keyframes slide-in {
@@ -273,6 +276,37 @@
     opacity: 1;
   }
 }
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  grid-template-rows: 100% 100% 100% 100% 100%;
+  gap: 10px;
+ justify-content: center;
+}  
+
+.about p{
+  font-size: 150%;
+  padding: 5%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+.about h2 {
+font-size: 200%;
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+
+
+
+/*Carrossel dos desenvolvedores*/
+
+
+
 
 
 
@@ -292,3 +326,4 @@
     width: 300px;
   }
 }
+

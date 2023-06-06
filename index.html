@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="glider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="./JS/card-gustavo.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet" />
@@ -24,21 +25,50 @@
       <script src="./JS/app.js" defer></script>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div class="logo">
         <img src="./IMG/Meu projeto.png" alt="" />
         <a href="#">E-PLANNER</a>
       </div>
+      <button class="menu-toggle" aria-label="Menu Toggle">
+        <span class="icon"></span>
+      </button>
       <nav>
         <a href="#inicio" class="nav-list">Início</a>
         <a href="#recursos" class="nav-list">Recursos</a>
-        <a href="#" class="nav-list">Quem somos</a>
-        <a href="#" class="nav-list">Fale Conosco</a>
+        <a href="#sobre" class="nav-list">Quem somos</a>
+        <a href="#fale-conosco" class="nav-list">Fale Conosco</a>
         <a href="#" class="btn">Baixe o app</a>
       </nav>
-    </header>
+    </header> -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('open');
+  nav.classList.toggle('open');
+});
+
+</script>    
     <main>
       <div class="inicio" id="inicio">
+        <header>
+          <div class="logo">
+            <img src="./IMG/Meu projeto.png" alt="" />
+            <a href="#">E-PLANNER</a>
+          </div>
+          <button class="menu-toggle" aria-label="Menu Toggle">
+            <span class="icon"></span>
+          </button>
+          <nav>
+            <a href="#inicio" class="nav-list">Início</a>
+            <a href="#recursos" class="nav-list">Recursos</a>
+            <a href="#sobre" class="nav-list">Quem somos</a>
+            <a href="#fale-conosco" class="nav-list">Fale Conosco</a>
+            <a href="#" class="btn">Baixe o app</a>
+          </nav>
+        </header> <div class="inicioo">
         <div class="inicio__content">
           <img src="./IMG/tela.png" alt="" />
           <div class="inicio__texts">
@@ -54,7 +84,7 @@
               <button class="btn">Iniciar teste</button>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
 
 
@@ -87,38 +117,12 @@
           slides[0].style.display = 'block';
         });
       </script>
-      
-      <div class="mid__container">
-        <div class="slider-wrap">
-          <div class="slider">
-            <div class="holder">
-              <div class="slide active" id="slide-0">
-                <img class="lazy" data-src="IMG/mockup.png" alt="" srcset="">
-              </div>
-              <div class="slide" id="slide-1">
-                <img class="lazy" data-src="IMG/mockup.png" alt="" srcset="">
-              </div>
-              <div class="slide" id="slide-2">
-                <img class="lazy" data-src="IMG/mockup.png" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-          <div class="slider-nav">
-            <a class="active" href="#slide-0"></a>
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-          </div>
+
+        <div class="mid__container">
+          <card-gustavo imagem__mockup="./IMG/mockup2.png" imagem__background="./IMG/background.jpg"></card-gustavo>
+        
+        
         </div>
-        <div class="text__container2">
-          <div class="texxt active" id="text-0">aaaaaaaaa</div>
-          <div class="texxt" id="text-1">bbbbbbbbb</div>
-          <div class="texxt" id="text-2">
-            <p>.Nosso aplicativo oferece recursos para controlar suas finanças de forma eficiente.</p>
-            <p>.Informe seu salário, cadastre gastos diários, edite categorias e acompanhe sua disponibilidade para novos gastos.</p>
-            <p>.Além disso, você pode cadastrar despesas futuras e dividir sua renda por categorias.</p>
-          </div>
-        </div>
-      </div>
       
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
@@ -201,7 +205,11 @@
       </div>
       
 
-<div class="glider-contain">
+      <div class="space">
+        
+      </div>
+
+<div class="glider-contain" id="fale-conosco">
   <div class="glider">
     <div>
       <img src="IMG/foto Bya.png" alt="day">
@@ -327,8 +335,22 @@ sidebarToggle.addEventListener('click', () => {
   // Alterna a classe "open" na barra lateral
   sidebar.classList.toggle('open');
 });
-
     </script>
+
+<script>
+  // Inicializar o ScrollReveal
+  ScrollReveal().reveal('.scroll-reveal', {
+    delay: 200,    // Atraso antes que o elemento seja revelado (em milissegundos)
+    distance: '20px',   // Distância do deslocamento do elemento
+    duration: 800,   // Duração da animação (em milissegundos)
+    easing: 'ease-in-out',   // Efeito de animação
+    origin: 'bottom',   // Origem da animação (pode ser 'top', 'right', 'bottom' ou 'left')
+    reset: true   // Resetar a animação em cada rolagem
+  });
+</script>
+
   </body>
   <script src="./JS/glinder.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
 </html>

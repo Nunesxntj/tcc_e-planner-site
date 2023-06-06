@@ -8,7 +8,7 @@
 /* Barra de navegação  */
 
 .container {
-    width: 100%;
+    width: 100vh;
     
     }
     
@@ -16,7 +16,6 @@
     background-color: #2C3C51F5 ;
     
     }
-    
     #nav-container {
     padding-top: 0;
     padding-bottom: 0;
@@ -347,6 +346,7 @@ h1 {
       height: auto;
       
     }
+
 
    
      

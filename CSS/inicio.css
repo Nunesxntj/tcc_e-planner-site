@@ -1,17 +1,18 @@
 .inicio {
-  display: flex;
+  width: 100%;
   flex-direction: column;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  height: 170vh;
+  align-items: flex-start;
+  background-image: url(../IMG/bg-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
 
 .inicio__content {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   gap: 32px;
   z-index: 2;
 }
@@ -46,7 +47,7 @@
 
 .logo a {
   padding-left: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .logo a:hover {
@@ -57,7 +58,7 @@
 .text__description {
   font-size: 2rem;
   font-weight: 600;
-  color: #2c3c51;
+  color: #ffffff;
 }
 
 .description {
@@ -74,8 +75,12 @@
 
 @media (max-width: 768px) {
   .text__name {
-    font-size: 1rem;
-    width: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: center;
   }
 
   .text__description {
@@ -84,7 +89,34 @@
     flex-wrap: wrap;
   }
 
+  .description {
+    padding-left: 5%;
+  }
+
   .inicio__content > img {
     width: 300px;
+    
+  }
+  .inicio__content {
+    width: 100%;
+    padding-top: 20%;
+    flex-direction: column-reverse;
+    justify-content: start;
+
+  }
+  .inicio {
+    background-position: -190px 0;
+    background-repeat: no-repeat;
+  }
+  .inicioo {
+    width: 100%;
+  }
+
+  .btn__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    justify-content: center;
   }
 }

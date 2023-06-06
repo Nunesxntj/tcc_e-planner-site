@@ -3,7 +3,7 @@
   flex-direction: column;
   display: flex;
   height: 170vh;
-  align-items: flex-start;
+  align-items: center;
   background-image: url(../IMG/bg-hero.png);
   background-repeat: no-repeat;
   background-size: cover;

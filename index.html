@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/c6e4bf5438.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./IMG/logo_tcc.png">
     <link rel="stylesheet" href="glinder.css">
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glider"></script>
     <link rel="stylesheet" type="text/css" href="glider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <script src="./JS/card-gustavo.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet" />
-    <title>E-PLANNER</title>
+    <title>Invista, Planeje & Gerencie com E-PLANNER </title>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/inicio.css" />
     <link rel="stylesheet" href="./CSS/recursos.css" />
@@ -39,7 +42,7 @@ menuToggle.addEventListener('click', () => {
       <div class="inicio" id="inicio">
         <header>
           <div class="logo">
-            <img src="./IMG/Meu projeto.png" alt="" />
+            <img src="./IMG/logo_tcc.png" alt="" />
             <a href="#">E-PLANNER</a>
           </div>
           <button class="menu-toggle" aria-label="Menu Toggle">
@@ -102,30 +105,34 @@ menuToggle.addEventListener('click', () => {
         });
       </script>
         <div class="titulo-g">
-          <h4> INVISTA COM E-PLANNER </h4>
+          <h4> Facilidade e Acessibilidade no seu gerenciamento </h4>
         </div>
         <div class="mid__container">
           <div class="g-container">
             <div class="e__container">
+              <div class="sub__g">
+                <h2>Beneficios</h2>
+                <p>aqui você pode</p>
+              </div>
             <div class="icon-g">
-              <img class="seta-g" src="IMG/seta-direita.png" alt="Seta">
-              <p class="text__g">aaaaa</p>
+              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+              <p class="text__g">Criar suas próprias categorias</p>
             </div>
             <div class="icon-g">
-              <img class="seta-g" src="IMG/seta-direita.png" alt="Seta">
-              <p class="text__g">aaaaa</p></div>
+              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+              <p class="text__g">Ver quanto ecônomizou</p></div>
             <div class="icon-g">
-              <img class="seta-g" src="IMG/seta-direita.png" alt="Seta">
-              <p class="text__g">aaaaa</p>
+              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+              <p class="text__g">Agendar gastos futuros</p>
             </div>
             <div class="icon-g">
-              <img class="seta-g" src="IMG/seta-direita.png" alt="Seta">
-              <p class="text__g">aaaaa</p>
+              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+              <p class="text__g">Consiguir sua idependência financeira</p>
             </div>
           </div>
           </div>
           <div class="card-g">
-            <card-gustavo imagem__mockup="./IMG/mockup2.png" imagem__background="./IMG/background.jpg"></card-gustavo>
+            <card-gustavo class="card-gustavo" imagem__mockup="./IMG/mockup2.png" imagem__background="./IMG/background.jpg"></card-gustavo>
           </div>
         </div>
       
@@ -183,6 +190,7 @@ menuToggle.addEventListener('click', () => {
         });
       </script>
       <div class="grid-container-3 about" id="sobre">
+        <div class="icon-col"></div>
         <div class="sobre__col">
           <div class="col-text">
               <h2>Quem somos</h2>
@@ -204,56 +212,151 @@ menuToggle.addEventListener('click', () => {
           </div>
         </div>
       </div>
-      
-
-      <div class="space">
-        
+      <div class="container">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                <img src="./IMG/foto Gustavo.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Gustavo Nunes</div>
+                 <div class="job">Back-end</div>
+               </div>
+               <div class="media-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                <img src="./IMG/foto_Juan.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Juan Pablo</div>
+                 <div class="job">UI Designer</div>
+               </div>
+               <div class="media-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                <img src="./IMG/Foto Ana 1.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Ana Beatriz</div>
+                 <div class="job">Web Devloper</div>
+               </div>
+               <div class="media-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+               </div>
+             </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="./IMG/foto Bya.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Byatriz</div>
+                 <div class="job">Web Designer</div>
+               </div>
+               <div class="media-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="IMG/foto Day 1.png" alt="">
+                </div>
+                <div class="details">
+                  <div class="name">Murilo Jacobina</div>
+                  <div class="job">Web Devloper</div>
+                </div>
+                <div class="media-icons">
+                  <a href="#"><i class="fab fa-google"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="IMG/foto Murilo 1.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Murilo Jacobina</div>
+                 <div class="job">Web Devloper</div>
+               </div>
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-google"></i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+                 <a href="#"><i class="fab fa-linkedin"></i></a>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class=" active one"></label>
+          <label for="two" class="two"></label>
+        </div>
       </div>
-
-<!-- <div class="glider-contain" id="fale-conosco">
-  <div class="glider">
-    <div>
-      <img src="IMG/foto Bya.png" alt="day">
-      <p class="image-name">byatriz</p>
-      <p class="image-description">Desenvolvedora de banco de dados, programadora do site e documentação</p>
-    </div>
-    <div>
-      <img src="IMG/foto Day 1.png" alt="day">
-      <p class="image-name">Dayla</p>
-      <p class="image-description">Desenvolvedora front-end, designer e idealizadora do projeto de ideia</p>
-    </div>
-    <div>
-      <img src="IMG/foto Gustavo.png" alt="day">
-      <p class="image-name">Gustavo</p>
-      <p class="image-description">Desenvolvedor back-end e idealizador do projeto de ideia</p>
-    </div>
-    <div>
-      <img src="IMG/foto Murilo 1.png" alt="day">
-      <p class="image-name">Murilo</p>
-      <p class="image-description">Desenvolvedor back-end, executor da documentação e projeto de ideia</p>
-    </div>
-    <div>
-      <img src="IMG/foto_Juan.png" alt="day">
-      <p class="image-name">Juan</p>
-      <p class="image-description">Desenvolvedor front-end, designer e idealizador do projeto</p>
-    </div>
-    <div>
-      <img src="IMG/Foto Ana 1.png" alt="day">
-      <p class="image-name">Ana</p>
-      <p class="image-description">Desenvolvedora de banco de dados, designer do site e executora da documentação</p>
-    </div>
-  </div>
-  <div role="tablist" class="dots"></div>
-  <button class="glider-prev"></button>
-  <button class="glider-next"></button>
-</div> -->
-
       
 </div>
     </main>
    
     <footer>
-    
+      <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Sobre</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>E-PLANNER</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
+                </div>
+                <p class="copyright">E-PLANNER © 2018</p>
+            </div>
+        </footer>
+    </div>
      
     </footer>
 

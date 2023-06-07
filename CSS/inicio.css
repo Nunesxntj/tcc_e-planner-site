@@ -2,11 +2,11 @@
   width: 100%;
   flex-direction: column;
   display: flex;
-  height: 170vh;
+  height: auto;
   align-items: center;
   background-image: url(../IMG/bg-hero.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1920px 900px;
 }
 
 .inicio__content {
@@ -27,7 +27,7 @@
 }
 
 .text__name {
-  color: #02cb7f;
+  color: #fff;
   font-weight: 800;
   font-size: 5rem;
   padding-bottom: 32px;
@@ -52,7 +52,7 @@
 
 .logo a:hover {
   padding-left: 10px;
-  color: #02cb7f;
+  color: #52D5FF;
 }
 
 .text__description {

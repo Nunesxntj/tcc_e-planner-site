@@ -30,10 +30,11 @@ class card extends HTMLElement {
     css.textContent = `
 
     .container {
+      width:60%;
+      height: 100%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      width: fit-content;
       background: rgb(255,255,255);
       background: linear-gradient(220deg, rgba(255,255,255,0) 4%, rgba(44,60,82,1) 100%);
       border-radius: 32px;
@@ -42,7 +43,7 @@ class card extends HTMLElement {
     
     .container__image {
       height: 100%;
-      width: 100%;
+      width: 80%;
       overflow: hidden;
       transform: translateY(20%);
       position: relative;
@@ -51,14 +52,14 @@ class card extends HTMLElement {
     }
     
     .mockup2 {
-      width: 100%;
+      width: 120%;
       height: fit-content;
       z-index: 2;
       position: absolute;
     }
     
     .background {
-      width: 66%;
+      width: 76%;
       height: fit-content;
       transform: translateY(3%);
     }

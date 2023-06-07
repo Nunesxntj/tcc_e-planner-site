@@ -12,7 +12,7 @@
 .inicio__content {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 110vh;
   gap: 32px;
   z-index: 2;
 }
@@ -78,19 +78,23 @@
     display: flex;
     text-align: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100%;
     justify-content: center;
   }
 
   .text__description {
-    width: 300px;
-    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    text-align: center;
     flex-wrap: wrap;
+    padding-bottom: 5%;
   }
 
   .description {
-    padding-left: 5%;
+    display: flex;
+    width: 100%;
+    align-items: center;
   }
 
   .inicio__content > img {
@@ -111,12 +115,16 @@
   .inicioo {
     width: 100%;
   }
-
+.btn {
+  width: 160px;
+  height: 40px;
+}
   .btn__content {
     width: 100%;
     display: flex;
     align-items: center;
     padding-top: 32px;
+    margin-bottom: 32px ;
     justify-content: center;
   }
 }

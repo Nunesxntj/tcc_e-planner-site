@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +23,7 @@ body {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 header {
@@ -257,7 +258,7 @@ input[type="radio"]{
 .footer-dark {
   padding:50px 0;
   color:#000000;
-  background-color:#ffffff;
+  background-color:#f7f7f7;
 }
 
 .footer-dark h3 {

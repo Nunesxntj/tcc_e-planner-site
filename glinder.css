@@ -279,14 +279,16 @@
 .card-g{
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 120%;
   height: 100%;
+  padding-bottom: 20px;
 }
 .card-gustavo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
 }
 
 }

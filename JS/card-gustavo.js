@@ -35,8 +35,8 @@ class card extends HTMLElement {
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      background: rgb(255,255,255);
-      background: linear-gradient(220deg, rgba(255,255,255,0) 4%, rgba(44,60,82,1) 100%);
+      background: rgb(5,14,39);
+      background: linear-gradient(30deg, rgba(5,14,39,1) 0%, rgba(26,56,140,1) 35%, rgba(255,255,255,1) 100%);
       border-radius: 32px;
       overflow: hidden;
     }

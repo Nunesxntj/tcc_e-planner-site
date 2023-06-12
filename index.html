@@ -1,143 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/c6e4bf5438.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="./IMG/logo_tcc.png">
-    <link rel="stylesheet" href="glinder.css">
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glider"></script>
-    <link rel="stylesheet" type="text/css" href="glider.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <script src="./JS/card-gustavo.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-      rel="stylesheet" />
-    <title>Invista, Planeje & Gerencie com E-PLANNER </title>
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/inicio.css" />
-    <link rel="stylesheet" href="./CSS/recursos.css" />
-    <script
-      src="https://kit.fontawesome.com/324b71f187.js"
-      crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-      <script src="./JS/app.js" defer></script>
-  </head>
-  <body>
-<script>
-      const menuToggle = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('nav');
-      menuToggle.addEventListener('click', () => {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/c6e4bf5438.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./IMG/logo_tcc.png">
+  <link rel="stylesheet" href="glinder.css">
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glider"></script>
+  <link rel="stylesheet" type="text/css" href="glider.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="./JS/card-gustavo.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <title>Invista, Planeje & Gerencie com E-PLANNER </title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/inicio.css" />
+  <link rel="stylesheet" href="./CSS/recursos.css" />
+  <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script src="./JS/app.js" defer></script>
+</head>
+
+<body>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
       menuToggle.classList.toggle('open');
       nav.classList.toggle('open');
-});
+    });
 
-</script>    
-    <main>
-      <div class="inicio" id="inicio">
-        <header>
-          <div class="logo">
-            <img src="./IMG/logo_tcc.png" alt="" />
-            <a href="#">E-PLANNER</a>
-          </div>
-          <button class="menu-toggle" aria-label="Menu Toggle">
-            <span class="icon"></span>
-          </button>
-          <nav>
-            <a href="#inicio" class="nav-list">Início</a>
-            <a href="#recursos" class="nav-list">Recursos</a>
-            <a href="#quem" class="nav-list">Quem somos</a>
-            <a href="#footer" class="nav-list">Sobre</a>
-            <a href="#" class="btn">Baixe o app</a>
-          </nav>
-        </header> <div class="inicioo">
+  </script>
+  <main>
+    <div class="inicio" id="inicio">
+      <header>
+        <div class="logo">
+          <img src="./IMG/logo_tcc.png" alt="" />
+          <a href="./index.html">E-PLANNER</a>
+        </div>
+        <button class="menu-toggle" aria-label="Menu Toggle">
+          <span class="icon"></span>
+        </button>
+        <nav>
+          <a href="#inicio" class="nav-list">Início</a>
+          <a href="#recursos" class="nav-list">Recursos</a>
+          <a href="#quem" class="nav-list">Quem somos</a>
+          <a href="#footer" class="nav-list">Sobre</a>
+          <a href="#" class="btn">Baixe o app</a>
+        </nav>
+      </header>
+      <div class="inicioo">
         <div class="inicio__content">
           <img src="./IMG/tela.png" alt="" />
           <div class="inicio__texts">
             <div class="text__name">E-PLANNER</div>
             <div class="description">
-              <span class="text__description"
-                >O melhor jeito de organizar suas finanças.</span>
+              <span class="text__description">O melhor jeito de organizar suas finanças.</span>
             </div>
             <div class="btn__content">
-              <button class="btn">Iniciar teste</button>
+              <a href="./index2.html" class="btn">Iniciar teste</a>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      </script>
-        <div class="titulo-g">
-          <h4> Facilidade e Acessibilidade no seu gerenciamento </h4>
-        </div>
-        <div class="mid__container" id="recursos">
-          <div class="g-container">
-            <div class="e__container">
-              <div class="sub__g">
-                <h2>Beneficios</h2>
-                <p>aqui você pode</p>
+    </div>
+    </script>
+
+    <style>
+      /* Estilos do Swiper */
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Outros estilos de slide */
+      }
+
+      /* Estilos dos botões de navegação */
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: 27px;
+        height: 44px;
+        transform: translateY(3000%);
+
+        z-index: 10;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .swiper-button-next {
+        right: 10px;
+      }
+
+      .swiper-button-prev {
+        left: 10px;
+      }
+    </style>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="titulo-g">
+            <h4>Facilidade e Acessibilidade no seu gerenciamento</h4>
+          </div>
+          <div class="mid__container" id="recursos">
+            <div class="g-container">
+              <div class="e__container">
+                <div class="sub__g">
+                  <h2>Benefícios</h2>
+                  <p>aqui você pode</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">Criar suas próprias categorias</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">Ver quanto economizou</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">Agendar gastos futuros</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">Conseguir sua independência financeira</p>
+                </div>
               </div>
-            <div class="icon-g">
-              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
-              <p class="text__g">Criar suas próprias categorias</p>
             </div>
-            <div class="icon-g">
-              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
-              <p class="text__g">Ver quanto ecônomizou</p></div>
-            <div class="icon-g">
-              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
-              <p class="text__g">Agendar gastos futuros</p>
+            <div class="card-g">
+              <card-gustavo class="card-gustavo" imagem__mockup="./IMG/mockup2.png"
+                imagem__background="./IMG/background.jpg"></card-gustavo>
             </div>
-            <div class="icon-g">
-              <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
-              <p class="text__g">Consiguir sua idependência financeira</p>
-            </div>
-          </div>
-          </div>
-          <div class="card-g">
-            <card-gustavo class="card-gustavo" imagem__mockup="./IMG/mockup2.png" imagem__background="./IMG/background.jpg"></card-gustavo>
           </div>
         </div>
-        
+        <div class="swiper-slide">
+          <div class="titulo-g">
+            <h4>aaaaaaaaaaaaaaaa</h4>
+          </div>
+          <div class="mid__container" id="recursos">
+            <div class="g-container">
+              <div class="e__container">
+                <div class="sub__g">
+                  <h2>aaaaaaaaaa</h2>
+                  <p>aaaaaaa</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">aaaaaaaaa</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">aaaaaaaaaaaa</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">aaaa</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">aaaaaaaaaaaaa</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-g">
+              <card-gustavo class="card-gustavo" imagem__mockup="./IMG/mockup2.png"
+                imagem__background="./IMG/background.jpg"></card-gustavo>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="titulo-g">
+            <h4>bbbbbbbbbbb</h4>
+          </div>
+          <div class="mid__container" id="recursos">
+            <div class="g-container">
+              <div class="e__container">
+                <div class="sub__g">
+                  <h2>bbbbbbbbbbbbbbbbb</h2>
+                  <p>bbbbbbbbbbbbbbb</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">bbbbbbbbbbbb</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">bbbbbbbbbbbbb</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">bbbbbbbbbbbbbbbb</p>
+                </div>
+                <div class="icon-g">
+                  <img class="seta-g" src="IMG/mandar (1).png" alt="Seta">
+                  <p class="text__g">bbbbbbbbbbbbbbbbbb</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-g">
+              <card-gustavo class="card-gustavo" imagem__mockup="./IMG/mockup2.png"
+                imagem__background="./IMG/background.jpg"></card-gustavo>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
     <div class="azul-container">
       <div class="box-azul">
         <div class="text-azul">
-           <h4> Consiga sua indepêndencia </h4>
-           <h2>  com o APP da e-planner  </h2> 
+          <h4> Consiga sua indepêndencia </h4>
+          <h2> com o APP da e-planner </h2>
+        </div>
+        <div class="p-azul">
+          <p>
+            Descubra a verdadeira clareza financeira. Nosso aplicativo
+            revolucionário oferece insights detalhados, gráficos poderosos
+            e controle personalizado de gastos. Seja o arquiteto da sua prosperidade
+            financeira e alcance a liberdade que você merece.
+          </p>
+
+          <div class="btn-azul-container">
+            <button class="btn-azul"> Teste agora </button>
           </div>
-           <div class="p-azul">
-            <p>
-              Descubra a verdadeira clareza financeira. Nosso aplicativo 
-              revolucionário oferece insights detalhados, gráficos poderosos
-              e controle personalizado de gastos. Seja o arquiteto da sua prosperidade
-              financeira e alcance a liberdade que você merece.
-            </p>
-          
-              <div class="btn-azul-container">
-                <button class="btn-azul"> Teste agora </button>
-              </div>
-           </div>
-           <div class="quatro-azul">
-            <div>
-              <img class='icon-container' src="IMG/adicionar.png" alt="">
-              <span class="icon-azul">Crie categorias a partir da sua necessidade </span>
-            </div>
-            <div>
-              <img class='icon-container' src="IMG/desconto.png" alt="">
-              <span class="icon-azul">Veja em um gráfico dedicado o quanto econômizou </span>
-            </div>
-            <div>
-              <img class='icon-container' src="IMG/cronograma.png" alt="">
-              <span class="icon-azul">Agende e acompanhe seus gastos futuros </span>
-            </div>
-            <div>
-              <img class='icon-container' src="IMG/dolar.png" alt="">
-              <span class="icon-azul">Consiga a sonhada indepêndencia financeira</span>
-            
+        </div>
+        <div class="quatro-azul">
+          <div>
+            <img class='icon-container' src="IMG/adicionar.png" alt="">
+            <span class="icon-azul">Crie categorias a partir da sua necessidade </span>
+          </div>
+          <div>
+            <img class='icon-container' src="IMG/desconto.png" alt="">
+            <span class="icon-azul">Veja em um gráfico dedicado o quanto econômizou </span>
+          </div>
+          <div>
+            <img class='icon-container' src="IMG/cronograma.png" alt="">
+            <span class="icon-azul">Agende e acompanhe seus gastos futuros </span>
+          </div>
+          <div>
+            <img class='icon-container' src="IMG/dolar.png" alt="">
+            <span class="icon-azul">Consiga a sonhada indepêndencia financeira</span>
+
           </div>
         </div>
       </div>
@@ -166,7 +295,7 @@
             <div class="valor_content_title">Empoderamento</div>
             <div class="valor_content_description">
               Capacitamos nossos usuários para que assumam o controle de suas finanças,
-              proporcionando-lhes ferramentas e 
+              proporcionando-lhes ferramentas e
               conhecimentos necessários.
             </div>
           </div>
@@ -177,7 +306,7 @@
             <div class="valor_content_title">Transparência</div>
             <div class="valor_content_description">
               Valorizamos a transparência em todos os aspectos do nosso aplicativo,
-              fornecendo informações claras e precisas sobre gastos, economias e 
+              fornecendo informações claras e precisas sobre gastos, economias e
               metas financeiras.
             </div>
           </div>
@@ -199,7 +328,7 @@
             <div class="valor_content_title">Privacidade</div>
             <div class="valor_content_description">
               Respeitamos a privacidade dos nossos usuários e garantimos
-              a proteção de suas informações pessoais, mantendo altos 
+              a proteção de suas informações pessoais, mantendo altos
               padrões de segurança.
             </div>
           </div>
@@ -220,186 +349,207 @@
 
 
     <div class="titulo-g">
-      <h4> < Ferramentas /> </h4>
+      <h4>
+        < Ferramentas />
+      </h4>
     </div>
     <div class="fe__container">
       <div class="ferramentas">
         <div class="fer">
           <button class="fer-icon">
-            <img src="IMG/html.png" alt="dddd" style="color: #f00;">
+            <img class="fer--icon" src="IMG/html.png" alt="dddd" style="color: #f00;">
           </button>
         </div>
         <div class="fer">
           <button class="fer-icon">
-            <img src="IMG/css.png" alt="cccc">
+            <img class="fer--icon"  src="IMG/css.png" alt="cccc">
           </button>
         </div>
         <div class="fer">
           <button class="fer-icon">
-            <img src="IMG/js.png" alt="bbbb">
+            <img class="fer--icon"  src="IMG/js.png" alt="bbbb">
           </button>
         </div>
         <div class="fer">
           <button class="fer-icon">
-            <img src="IMG/b.png" alt="aaaa">
+            <img class="fer--icon" src="IMG/b.png" alt="aaaa">
           </button>
         </div>
       </div>
     </div>
 
-    <div class="titulo-g">
-      <h4> < Desenvolvedores /> </h4>
+    <div class="titulo-gg">
+      <h4>
+        < Desenvolvedores />
+      </h4>
     </div>
 
-  <div class="container">
-    <input type="radio" name="dot" id="one">
-    <input type="radio" name="dot" id="two">
-    <div class="main-card">
-      <div class="cards">
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="./IMG/foto Gustavo.png" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Gustavo Nunes</div>
-             <div class="job">Back-end</div>
-           </div>
-           <div class="media-icons">
-            <a href="guuhnunes7@gmail.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/Nunesxntj" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gustavo-nunes-36292324b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-           </div>
-         </div>
+    <div class="container">
+      <input type="radio" name="dot" id="one">
+      <input type="radio" name="dot" id="two">
+      <div class="main-card">
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="./IMG/foto Gustavo.png" alt="">
+              </div>
+              <div class="details">
+                <div class="name">Gustavo Nunes</div>
+                <div class="job">Back-end</div>
+              </div>
+              <div class="media-icons">
+                <a href="guuhnunes7@gmail.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Nunesxntj" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gustavo-nunes-36292324b/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="./IMG/foto_Juan.png" alt="">
+              </div>
+              <div class="details">
+                <div class="name">Juan Pablo</div>
+                <div class="job">UI Designer</div>
+              </div>
+              <div class="media-icons">
+                <a href="https://www.instagram.com/jp_semjeito/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Jpzinn654" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="./IMG/Foto Ana 1.png" alt="">
+              </div>
+              <div class="details">
+                <div class="name">Ana Beatriz</div>
+                <div class="job">Web Devloper</div>
+              </div>
+              <div class="media-icons">
+                <a href="https://www.instagram.com/ana._.albuq/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/AnaAlbuquerque28" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="./IMG/foto_Juan.png" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Juan Pablo</div>
-             <div class="job">UI Designer</div>
-           </div>
-           <div class="media-icons">
-            <a href="https://www.instagram.com/jp_semjeito/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/Jpzinn654" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-           </div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="./IMG/Foto Ana 1.png" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Ana Beatriz</div>
-             <div class="job">Web Devloper</div>
-           </div>
-           <div class="media-icons">
-            <a href="https://www.instagram.com/ana._.albuq/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/AnaAlbuquerque28" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-           </div>
-         </div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="./IMG/foto Bya.png" alt="">
+              </div>
+              <div class="details">
+                <div class="name">Byatriz</div>
+                <div class="job">Web Designer</div>
+              </div>
+              <div class="media-icons">
+                <a href="https://www.instagram.com/byaa_dossantos/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Bya61" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/byatriz-dos-santos-vieira-057a15230/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="IMG/foto Day 1.png" alt="">
+              </div>
+              <div class="details">
+                <div class="name">Dayla Mozzer</div>
+                <div class="job">Web Devloper</div>
+              </div>
+              <div class="media-icons">
+                <a href="https://www.instagram.com/day_massarioli/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/daymozzer" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="IMG/foto Murilo 1.png" alt="">
+              </div>
+              <div class="details">
+                <div class="name">Murilo Jacobina</div>
+                <div class="job">Web Devloper</div>
+              </div>
+              <div class="media-icons">
+                <a href="https://www.instagram.com/_murilo.l/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/MuriloJLima" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/murilo-jacobina-lima/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="cards">
-        <div class="card">
-         <div class="content">
-           <div class="img">
-             <img src="./IMG/foto Bya.png" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Byatriz</div>
-             <div class="job">Web Designer</div>
-           </div>
-           <div class="media-icons">
-            <a href="https://www.instagram.com/byaa_dossantos/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/Bya61" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/byatriz-dos-santos-vieira-057a15230/" target="_blank"><i class="fab fa-linkedin"></i></a>
-           </div>
-         </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="img">
-              <img src="IMG/foto Day 1.png" alt="">
-            </div>
-            <div class="details">
-              <div class="name">Dayla Mozzer</div>
-              <div class="job">Web Devloper</div>
-            </div>
-            <div class="media-icons">
-              <a href="https://www.instagram.com/day_massarioli/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://github.com/daymozzer" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-             <img src="IMG/foto Murilo 1.png" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Murilo Jacobina</div>
-             <div class="job">Web Devloper</div>
-           </div>
-           <div class="media-icons">
-             <a href="https://www.instagram.com/_murilo.l/" target="_blank"><i class="fab fa-instagram"></i></a>
-             <a href="https://github.com/MuriloJLima" target="_blank"><i class="fab fa-github"></i></a>
-             <a href="https://www.linkedin.com/in/murilo-jacobina-lima/" target="_blank"><i class="fab fa-linkedin"></i></a>
-           </div>
-         </div>
-        </div>
+      <div class="button">
+        <label for="one" class=" active one"></label>
+        <label for="two" class="two"></label>
       </div>
     </div>
-        <div class="button">
-          <label for="one" class=" active one"></label>
-          <label for="two" class="two"></label>
-        </div>
-      </div>
     </div>
-</main>
-    <footer>
-      <div class="footer-dark" id="footer">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Serviços</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Sobre</h3>
-                        <ul>
-                            <li><a href="/politicas de privacidade.html">Políticas de privacidade</a></li>
-                            <li><a href="#">Team</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>E-PLANNER</h3>
-                        <p>
-                          Transforme sua relação com o dinheiro com a E-Planner.
-                          Gerencie suas finanças, crie categorias personalizadas, 
-                          acompanhe suas economias e alcance sua independência financeira.
-                          Descubra o poder do e-Planner hoje mesmo. 
-                        </p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
-                </div>
-                <p class="copyright"> © 2023 E-PLANNER. Todos os direitos reservados </p>
+  </main>
+  <footer>
+    <div class="footer-dark" id="footer">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Serviços</h3>
+              <ul>
+                <li><a href="#">Web design</a></li>
+              </ul>
             </div>
-        </footer>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Sobre</h3>
+              <ul>
+                <li><a href="/politicas de privacidade.html">Políticas de privacidade</a></li>
+                <li><a href="#">Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>E-PLANNER</h3>
+              <p>
+                Transforme sua relação com o dinheiro com a E-Planner.
+                Gerencie suas finanças, crie categorias personalizadas,
+                acompanhe suas economias e alcance sua independência financeira.
+                Descubra o poder do e-Planner hoje mesmo.
+              </p>
+            </div>
+            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                  class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a
+                href="#"><i class="icon ion-social-linkedin"></i></a></div>
+          </div>
+          <p class="copyright"> © 2023 E-PLANNER. Todos os direitos reservados </p>
+        </div>
+      </footer>
     </div>
-     
-    </footer>
-  </body>
-  <script src="./JS/glinder.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+
+  </footer>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var mySwiper = new Swiper(".swiper-container", {
+      // Configurações do Swiper
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
+</script>
+<script src="./JS/glinder.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </html>

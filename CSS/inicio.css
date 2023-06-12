@@ -17,6 +17,25 @@
   z-index: 2;
 }
 
+.inicio-d {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  align-items: center;
+  background-image: url(../IMG/bg-hero.png);
+  background-repeat: no-repeat;
+  background-size: 1920px 900px;
+}
+
+.inicio__content-d {
+  display: flex;
+  align-items: start;
+  height: 110vh;
+  gap: 32px;
+  z-index: 2;
+}
+
 .inicio__texts {
   width: 100%;
   align-items: center;
@@ -33,6 +52,15 @@
   padding-bottom: 32px;
   letter-spacing: 0.5rem;
 }
+
+.text__name-d {
+  color: #000000;
+  font-weight: 800;
+  font-size: 5rem;
+  padding-bottom: 32px;
+  letter-spacing: 0.5rem;
+}
+
 
 .logo {
   height: 100%;
@@ -71,6 +99,20 @@
   align-items: start;
   padding-top: 32px;
   justify-content: start;
+}
+
+.historico-d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.historico-d__container p{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
 }
 
 @media (max-width: 768px) {

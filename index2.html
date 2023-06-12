@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/c6e4bf5438.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./IMG/logo_tcc.png">
+  <link rel="stylesheet" href="glinder.css">
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glider"></script>
+  <link rel="stylesheet" type="text/css" href="glider.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="./JS/card-gustavo.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <title>Invista, Planeje & Gerencie com E-PLANNER </title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/inicio.css" />
+  <link rel="stylesheet" href="./CSS/recursos.css" />
+  <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script src="./JS/app.js" defer></script>
+</head>
+
+<body>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+
+  </script>
+  <main>
+    <div class="inicio" id="inicio">
+      <header>
+        <div class="logo">
+          <img src="./IMG/logo_tcc.png" alt="" />
+          <a href="./index.html">E-PLANNER</a>
+        </div>
+        <button class="menu-toggle" aria-label="Menu Toggle">
+          <span class="icon"></span>
+        </button>
+        <nav>
+          <a href="#categorias" class="nav-list">Categorias</a>
+          <a href="#gastos" class="nav-list">Agendar</a>
+          <a href="#gráfico" class="nav-list">Grafico</a>
+          <a href="#historico" class="nav-list">Histórico</a>
+          <a href="#" class="btn">Baixe o app</a>
+        </nav>
+      </header>
+      <div class="inicioo-d">
+        <div class="inicio__content-d">
+          <div class="text__name">E-PLANNER</div>
+        </div>
+      </div>
+
+      <div class="historico">
+        <div class="title-select-container">
+          <h2>Histórico informativo</h2>
+          <div class="select">
+            <select class="select" id="categoriaDropdown">
+              <option class="bola">&nbsp;&nbsp;&nbsp;&#x1F4B3; Mercado</option>
+              <option class="categoria">Categoria 1</option>
+              <option class="categoria">Categoria 2</option>
+              <option class="categoria">Categoria 3</option>
+              <option class="categoria">Categoria 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="image-text-container">
+          <img src="IMG/grafico.png" alt="">
+        </div>
+      </div>
+      <div class="historico__container">
+        <div class="text_historico">
+        <p>Pesquise por mês</p>
+        <p>Monitore suas finanças pessoais</p>
+        <p>Identifique padrões</p>
+        <p>Consulte informações sobre a categoria</p>
+      </div>
+    </div>
+      
+  </main>
+  <footer>
+    <div class="footer-dark" id="footer">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Serviços</h3>
+              <ul>
+                <li><a href="#">Web design</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Sobre</h3>
+              <ul>
+                <li><a href="/politicas de privacidade.html">Políticas de privacidade</a></li>
+                <li><a href="#">Team</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>E-PLANNER</h3>
+              <p>
+                Transforme sua relação com o dinheiro com a E-Planner.
+                Gerencie suas finanças, crie categorias personalizadas,
+                acompanhe suas economias e alcance sua independência financeira.
+                Descubra o poder do e-Planner hoje mesmo.
+              </p>
+            </div>
+            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                  class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a
+                href="#"><i class="icon ion-social-linkedin"></i></a></div>
+          </div>
+          <p class="copyright"> © 2023 E-PLANNER. Todos os direitos reservados </p>
+        </div>
+      </footer>
+    </div>
+
+  </footer>
+</body>
+<script src="./JS/glinder.js"></script>
+
+</html>

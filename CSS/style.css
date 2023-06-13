@@ -743,9 +743,10 @@ input[type="radio"] {
   justify-content: center;
   width: 400px;
   height: 200px;
+  border: none;
+  outline: none;
   filter: grayscale(100%);
   border-radius: 30px;
-  box-sizing: border-box;
   background-color: #f7f7f7;
 }
 
@@ -1104,18 +1105,18 @@ input[type="radio"] {
   }
 
   .fer-icon {
+    outline: none;
     display: flex;
     height: fit-content;
     filter: grayscale(100%);
     border-radius: 0;
-    border: unset;
-    transition: unset;
-    transition-duration: unset;
+    border: none;
     background-color: #f7f7f7;
   }
 
 
   .fer-icon:hover {
+    outline: none;
     filter: grayscale(0%);
     background-color: #FFF;
     transition: unset;
@@ -1148,5 +1149,22 @@ input[type="radio"] {
     color: #2c3c52;
   }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    transform: translateY(1800%);
 
+    z-index: 10;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
 }

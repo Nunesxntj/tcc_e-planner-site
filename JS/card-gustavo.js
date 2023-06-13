@@ -10,7 +10,6 @@ class card extends HTMLElement {
 
   static get observedAttributes() {
     return [
-      'imagem__mockup',
       'imagem__background',
     ]
   }
@@ -33,35 +32,50 @@ class card extends HTMLElement {
       width:60%;
       height: 100%;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
       background: rgb(5,14,39);
       background: linear-gradient(30deg, rgba(5,14,39,1) 0%, rgba(26,56,140,1) 35%, rgba(255,255,255,1) 100%);
       border-radius: 32px;
-      overflow: hidden;
     }
     
     .container__image {
       height: 100%;
       width: 80%;
-      overflow: hidden;
-      transform: translateY(20%);
       position: relative;
       display: flex;
       justify-content: center;
-    }
-    
-    .mockup2 {
-      width: 120%;
-      height: fit-content;
-      z-index: 2;
-      position: absolute;
+      align-items: center;
     }
     
     .background {
-      width: 76%;
+      width: 100%;
       height: fit-content;
-      transform: translateY(3%);
+      
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 38vh;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(5,14,39);
+        background: linear-gradient(30deg, rgba(5,14,39,1) 0%, rgba(26,56,140,1) 35%, rgba(255,255,255,1) 100%);
+        border-radius: 32px;
+      }
+      
+      .container__image {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .background {
+        width: 100%;        
+      }
     }
     
       
@@ -77,15 +91,11 @@ class card extends HTMLElement {
     const container__image = document.createElement('div')
     container__image.classList.add('container__image')
 
-    const mockup = document.createElement('img')
-    mockup.src = this.imagem__mockup
-    mockup.classList.add('mockup2')
-
     const background = document.createElement('img')
     background.src = this.imagem__background
     background.classList.add('background')
 
-    container__image.append(mockup, background)
+    container__image.append( background)
     container.append(container__image)
 
     return container

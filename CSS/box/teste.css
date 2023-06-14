@@ -1,0 +1,353 @@
+
+.azul-container {
+    display: flex;
+    height: 100vh;
+    padding-top: 20%;
+    margin-bottom: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box-azul {
+    display: flex;
+    height: 98vh;
+    width: 76%;
+    border-radius: 46px;
+    background: linear-gradient(220deg, rgba(44, 60, 82, 0) 4%, rgb(93, 122, 180) 100%);
+    background-image: url(../../IMG/gr-1-vertical.png);
+    background-size: 100vw 150%;
+    flex-direction: column;
+  }
+  
+  .text-azul h4 {
+    font-weight: bold;
+    display: flex;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
+    padding-left: 40px;
+    margin: 0;
+  }
+  
+  .text-azul h2 {
+    font-weight: bold;
+    display: flex;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+  }
+  
+  .p-azul {
+    display: flex;
+    color: #fff;
+    width: 65%;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    flex-direction: column;
+  }
+  
+  .btn-azul {
+    background-color: #51D1FF;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 200px;
+    height: 60px;
+  }
+  
+  .quatro-azul {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: end;
+    justify-content: space-around;
+  }
+  
+  .icon-azul {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    font-size: 22px;
+    width: 250px;
+    height: 200px;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+
+    header {
+      padding-left: 16px;
+      padding-right: 16px;
+      align-items: center;
+      height: auto;
+      padding: 16px;
+    }
+  
+    .logo img {
+      height: 30px;
+    }
+  
+    .logo a {
+      font-size: 1rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 8px;
+      display: none;
+    }
+  
+    .nav-list {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      height: 40px;
+      width: 120px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-toggle.open .icon {
+      background-color: transparent;
+    }
+  
+    .menu-toggle.open .icon:before {
+      transform: translateY(0) rotate(45deg);
+    }
+  
+    .menu-toggle.open .icon:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  
+    .azul-container {
+      position: relative;
+      background-image: url(../../IMG/gr-1-vertical.png);
+      background-size: 80vw 100%;
+      height: auto;
+      width: 100vw;
+      padding: 0px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /*Icone de porcentagem*/
+  
+    .rounded-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: red;
+    }
+    
+  
+    .box-azul {
+      justify-content: left;
+      align-items: left;
+      height: auto;
+      width: 90vw;
+      border-radius: 22px;
+    }
+  
+    .text-azul h4 {
+      max-width: 290px;
+      font-size: 38px;
+      padding: 30px 20px 0px;
+    }
+  
+    .text-azul h2 {
+      max-width: 290px;
+      font-size: 38px;
+      padding: 0 20px;
+    }
+  
+    .p-azul {
+      display: flex;
+      color: #fff;
+      width: 100%;
+      font-size: 12px;
+      padding: 10px 20px;
+    }
+  
+    .p-azul p {
+      line-height: 24px;
+    }
+  
+    .btn-azul {
+      background-color: #51D1FF;
+      display: flex;
+      color: #000;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-top: 10px;
+      width: 120px;
+      height: 50px;
+    }
+  
+    .quatro-azul {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: left;
+      padding: 20px 20px;
+  
+    }
+  
+    .icon-azul {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      display: flex;
+      font-size: 18px;
+      width: 250px;
+      height: 100px;
+      color: #fff;
+    }
+  
+    .icon-container {
+      width: 40px;
+      height: 40px;
+    }
+  
+    /* Estilos do Swiper */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Outros estilos de slide */
+    }
+  
+    /* Estilos dos botões de navegação */
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 50%;
+      width: 27px;
+      height: 44px;
+      transform: translateY(1700%);
+  
+      z-index: 10;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+  
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .swiper-button-next {
+      right: 10px;
+    }
+  
+    .swiper-button-prev {
+      left: 10px;
+    }
+  
+    .fe__container {
+      padding: unset;
+      display: flex;
+      width: 100%;
+      height: 85vh;
+    }
+  
+    .ferramentas {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      margin-bottom: 20%;
+    }
+  
+    .fer {
+      display: flex;
+      width: fit-content;
+    }
+  
+    .fer-icon {
+      outline: none;
+      display: flex;
+      height: fit-content;
+      filter: grayscale(100%);
+      border-radius: 0;
+      border: none;
+      background-color: #f7f7f7;
+    }
+  
+  
+    .fer-icon:hover {
+      outline: none;
+      filter: grayscale(0%);
+      background-color: #FFF;
+      transition: unset;
+      transition-duration: unset;
+    }
+  
+    .fer--icon {
+      width: 70%;
+    }
+  
+    .titulo-gg {
+      background-color: #F7F7F7;
+      padding-top: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .titulo-gg h4 {
+      font-family: 'Inter', Helvetica, sans-serif;
+      font-size: 32px;
+      color: #2c3c52;
+      text-align: center;
+    }
+  
+    .titulo-g h4 {
+      font-family: 'Inter', Helvetica, sans-serif;
+      font-size: 32px;
+      color: #2c3c52;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 50%;
+      width: 27px;
+      height: 44px;
+      transform: translateY(2200%);
+  
+      z-index: 10;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+  }  

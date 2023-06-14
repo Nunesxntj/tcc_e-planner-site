@@ -86,42 +86,6 @@ nav {
   background-color: #50af8b;
 }
 
-.menu-toggle {
-  display: none;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  position: relative;
-}
-
-.menu-toggle .icon {
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  display: block;
-  position: relative;
-  transition: background-color 0.3s ease;
-}
-
-.menu-toggle .icon:before,
-.menu-toggle .icon:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  display: block;
-  position: absolute;
-  transition: transform 0.3s ease;
-}
-
-.menu-toggle .icon:before {
-  transform: translateY(-8px);
-}
-
-.menu-toggle .icon:after {
-  transform: translateY(8px);
-}
 .container {
   max-width: 950px;
   width: 100%;

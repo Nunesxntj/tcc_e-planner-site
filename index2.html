@@ -18,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css.map">  
+  <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css.map">
   <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
   <link rel="stylesheet" href="CSS/index2/index2.css">
@@ -39,15 +39,20 @@
           <img src="./IMG/logo_tcc.png" alt="" />
           <a href="./index.html">E-PLANNER</a>
         </div>
-        <button class="menu-toggle" aria-label="Menu Toggle">
+        <button class="menu-toggle">
           <span class="icon"></span>
         </button>
         <nav>
-          <a href="/index.html#inicio" class="nav-list-d">Início</a>
-          <a href="/index.html#recursos" class="nav-list-d">Recursos</a>
-          <a href="/index.html#quem" class="nav-list-d">Quem somos</a>
-          <a href="./index.html#sobre" class="nav-list-d">Sobre</a>
-          <a href="#download" class="btn-d">Baixe o app</a>
+          <div class="sidebar">
+            <ul class="nav-list">
+              <li href="/index.html#inicio" class="nav-list-d">Início</li>
+              <li href="/index.html#recursos" class="nav-list-d">Recursos</li>
+              <li href="/index.html#quem" class="nav-list-d">Quem somos</li>
+              <li href="./index.html#sobre" class="nav-list-d">Sobre</li>
+              <li href="#download" class="btn-d">Baixe o app</li>
+            </ul>
+          </div>
+
         </nav>
       </header>
 
@@ -71,7 +76,7 @@
         </div>
 
         <div class="celular-d">
-          <img src="IMG/eplanner.png" alt="" style="width: 800px;">
+          <img src="./IMG/eplanner.png" alt="" style="width: 800px;">
         </div>
       </div>
     </div>
@@ -79,38 +84,45 @@
   </main>
   <footer>
     <div class="footer-dark" id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-3 item">
-              <h3>Serviços</h3>
-              <ul>
-                <li><a href="#">Web design</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-3 item">
-              <h3>Sobre</h3>
-              <ul>
-                <li><a href="/politicas de privacidade.html">Políticas de privacidade</a></li>
-                <li><a href="#">Team</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6 item text">
-              <h3>E-PLANNER</h3>
-              <p>
-                Transforme sua relação com o dinheiro com a E-Planner.
-                Gerencie suas finanças, crie categorias personalizadas,
-                acompanhe suas economias e alcance sua independência financeira.
-                Descubra o poder do e-Planner hoje mesmo.
-              </p>
-            </div>
-            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
-                  class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a
-                href="#"><i class="icon ion-social-linkedin"></i></a></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Serviços</h3>
+            <ul>
+              <li><a href="#">Web design</a></li>
+            </ul>
           </div>
-          <p class="copyright"> © 2023 E-PLANNER. Todos os direitos reservados </p>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Sobre</h3>
+            <ul>
+              <li><a href="/politicas de privacidade.html">Políticas de privacidade</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>E-PLANNER</h3>
+            <p>
+              Transforme sua relação com o dinheiro com a E-Planner.
+              Gerencie suas finanças, crie categorias personalizadas,
+              acompanhe suas economias e alcance sua independência financeira.
+              Descubra o poder do e-Planner hoje mesmo.
+            </p>
+          </div>
+          <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a
+              href="#"><i class="icon ion-social-linkedin"></i></a></div>
         </div>
+        <p class="copyright"> © 2023 E-PLANNER. Todos os direitos reservados </p>
+      </div>
     </div>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
 
+      menuToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+    </script>
   </footer>
 </body>
 <script src="./JS/glinder.js"></script>

@@ -112,21 +112,7 @@
       width: 120px;
     }
   
-    .menu-toggle {
-      display: block;
-    }
-  
-    .menu-toggle.open .icon {
-      background-color: transparent;
-    }
-  
-    .menu-toggle.open .icon:before {
-      transform: translateY(0) rotate(45deg);
-    }
-  
-    .menu-toggle.open .icon:after {
-      transform: translateY(0) rotate(-45deg);
-    }
+
   
     .azul-container {
       position: relative;

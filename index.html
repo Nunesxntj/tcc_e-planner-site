@@ -17,7 +17,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css.map">  
+  <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css.map">
   <link rel="stylesheet" href="./CSS/bootstrap/bootstrap.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
@@ -41,13 +41,14 @@
         <button class="menu-toggle" aria-label="Menu Toggle">
           <span class="icon"></span>
         </button>
-        <nav>
+        
+        <div class="sidebar">
           <a href="#inicio" class="nav-list">Início</a>
           <a href="#recursos" class="nav-list">Recursos</a>
           <a href="#quem" class="nav-list">Quem somos</a>
           <a href="#footer" class="nav-list">Sobre</a>
-          <a href="./index2.html#download" class="btn">Baixe o app</a>
-        </nav>
+          <a href="./index2.html#download" class="btn-d">Baixe o app</a>
+        </div>
       </header>
       <div class="inicioo">
         <div class="inicio__content">
@@ -535,8 +536,19 @@
       },
     });
   });
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('open');
+    sidebar.classList.toggle('open');
+  });
+
+
 </script>
 <script src="./JS/glinder.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </html>

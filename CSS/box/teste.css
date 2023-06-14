@@ -130,7 +130,6 @@
   
     .azul-container {
       position: relative;
-      background-image: url(../../IMG/gr-1-vertical.png);
       background-size: 80vw 100%;
       height: auto;
       width: 100vw;
@@ -266,88 +265,5 @@
   
     .swiper-button-prev {
       left: 10px;
-    }
-  
-    .fe__container {
-      padding: unset;
-      display: flex;
-      width: 100%;
-      height: 85vh;
-    }
-  
-    .ferramentas {
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      margin-bottom: 20%;
-    }
-  
-    .fer {
-      display: flex;
-      width: fit-content;
-    }
-  
-    .fer-icon {
-      outline: none;
-      display: flex;
-      height: fit-content;
-      filter: grayscale(100%);
-      border-radius: 0;
-      border: none;
-      background-color: #f7f7f7;
-    }
-  
-  
-    .fer-icon:hover {
-      outline: none;
-      filter: grayscale(0%);
-      background-color: #FFF;
-      transition: unset;
-      transition-duration: unset;
-    }
-  
-    .fer--icon {
-      width: 70%;
-    }
-  
-    .titulo-gg {
-      background-color: #F7F7F7;
-      padding-top: 10%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .titulo-gg h4 {
-      font-family: 'Inter', Helvetica, sans-serif;
-      font-size: 32px;
-      color: #2c3c52;
-      text-align: center;
-    }
-  
-    .titulo-g h4 {
-      font-family: 'Inter', Helvetica, sans-serif;
-      font-size: 32px;
-      color: #2c3c52;
-    }
-  
-    .swiper-button-next,
-    .swiper-button-prev {
-      position: absolute;
-      top: 50%;
-      width: 27px;
-      height: 44px;
-      transform: translateY(2200%);
-  
-      z-index: 10;
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.3s ease;
     }
   }  

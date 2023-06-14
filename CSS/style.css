@@ -7,7 +7,9 @@
   outline: none;
   border: none;
 }
-
+a {
+  text-decoration: none;
+}
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -120,125 +122,6 @@ nav {
 .menu-toggle .icon:after {
   transform: translateY(8px);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-.parceiro__motivo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px;
-}
-
-.section_parceiro_title {
-  padding-top: 16px;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.parceiro__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  background-color: #ee9925;
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-
-.motivo__container {
-  display: flex;
-  width: 100%;
-  max-width: 1500px;
-  height: fit-content;
-  justify-content: space-between;
-  gap: 32px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.motivo__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  text-align: justify;
-}
-
-.image_parceiro_home {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  border: 0.75px solid #ee9925;
-}
-
-.parceiro__valores {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 60vh;
-  height: 100vh;
-  width: 100%;
-  background-color: #f7f7f7;
-}
-
-.padding {
-  padding-top: 32px;
-}
-
-.valores__description {
-  padding-top: 12px;
-  width: 90%;
-  text-align: center;
-  color: #404041;
-  padding-bottom: 32px;
-}
-
-.valores__container {
-  height: 100%;
-  width: 100%;
-  max-width: 1800px;
-  place-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 16px;
-  padding: 32px;
-}
-
-.valor {
-  display: flex;
-  gap: 24px;
-}
-
-.valor__number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 1px solid #2c3c52;
-  color: #2c3c52;
-  font-weight: 500;
-}
-
-.valor_content_title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.valor_content_description {
-  width: 350px;
-  text-align: justify;
-}
-
-
 .container {
   max-width: 950px;
   width: 100%;
@@ -680,99 +563,6 @@ input[type="radio"] {
   }
 }
 
-.celular {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-}
-.celular-d {
-  display: flex;
-  width: 100%;
-  align-items: start;
-  justify-content: end;
-}
-.celular-container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  padding-top: 5%;
-}
-.download {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding-top: 7%;
-  align-items: start;
-  width: 100%;
-}
-.download h4{
-  display: flex;
-  align-self: center;
-  font-size: 95px;
-  padding-left: 2%;
-}
-.apple {
-  display: flex;
-  background-image: url(/IMG/apple.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  height: 100px;
-  width: 300px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin: 10px;
-  margin-top: 5%;
-}
-.apple-d {
-
-
-}
-.samsumg {
-  display: flex;
-  background-image: url(/IMG/google.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  height: 100px;
-  width: 300px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin: 10px;
-}
-.samsumg-d {
-
-}
-.code-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 5%;
-}
-.code {
-  display: flex;
-  width: 100%;
-  background-size: cover;
-  align-items: start;
-  justify-content: end;
-}
-.code-d {
-  display: flex;
-  width: 400px;
-  height: 300px;
-  background-image: url(/IMG/frame.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  transform: translateY(-90%);
-}
-
-
 @media (max-width: 768px) {
 
   header {
@@ -878,7 +668,7 @@ input[type="radio"] {
     padding: unset;
     display: flex;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
   }
 
   .ferramentas {
@@ -932,11 +722,6 @@ input[type="radio"] {
     text-align: center;
   }
 
-  .titulo-g h4 {
-    font-family: 'Inter', Helvetica, sans-serif;
-    font-size: 32px;
-    color: #2c3c52;
-  }
 
   .swiper-button-next,
   .swiper-button-prev {

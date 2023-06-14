@@ -1,0 +1,172 @@
+
+.celular {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .celular-d {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: end;
+  }
+  .celular-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+  .download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 7%;
+    align-items: start;
+    width: 100%;
+  }
+  .download h4{
+    display: flex;
+    align-self: center;
+    font-size: 95px;
+    padding-left: 2%;
+  }
+  .apple {
+    display: flex;
+    background-image: url(/IMG/apple.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 5%;
+  }
+  .apple-d {
+  
+  
+  }
+  .samsumg {
+    display: flex;
+    background-image: url(/IMG/google.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .samsumg-d {
+  
+  }
+  .code-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+  .code {
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    align-items: start;
+    justify-content: end;
+  }
+  .code-d {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    background-image: url(/IMG/frame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    transform: translateY(-90%);
+  }
+  
+  @media (max-width: 768px) {
+    
+.celular {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .celular-d {
+    display: none;
+    width: 100%;
+  }
+  .celular-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .download {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .download h4{
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    padding-left: 5%;
+  }
+  .apple {
+    display: flex;
+    background-image: url(/IMG/apple.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .apple-d {
+  
+  
+  }
+  .samsumg {
+    display: flex;
+    background-image: url(/IMG/google.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .samsumg-d {
+  
+  }
+  .code-container {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+    width: 100%;
+    align-items: center;
+  }
+  .code {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .code-d {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transform: translateY(0%);
+  }
+  }

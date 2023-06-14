@@ -66,7 +66,7 @@ class card extends HTMLElement {
       }
       
       .container__image {
-        width: 100%;
+        width: 50%;
         position: relative;
         display: flex;
         justify-content: center;

@@ -182,7 +182,7 @@ nav {
   flex-direction: column;
   align-items: center;
   min-height: 60vh;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #f7f7f7;
 }
@@ -796,12 +796,12 @@ input[type="radio"] {
   top: 50%;
   width: 27px;
   height: 44px;
-  transform: translateY(3000%);
+  transform: translateY(2400%);
 
   z-index: 10;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: #F7F7F7;
+  color: #000000;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -811,7 +811,7 @@ input[type="radio"] {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(231, 231, 231, 0.8);
 }
 
 .swiper-button-next {
@@ -908,6 +908,99 @@ input[type="radio"] {
   }
 }
 
+.celular {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.celular-d {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  justify-content: end;
+}
+.celular-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 5%;
+}
+.download {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 7%;
+  align-items: start;
+  width: 100%;
+}
+.download h4{
+  display: flex;
+  align-self: center;
+  font-size: 95px;
+  padding-left: 2%;
+}
+.apple {
+  display: flex;
+  background-image: url(/IMG/apple.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  margin-top: 5%;
+}
+.apple-d {
+
+
+}
+.samsumg {
+  display: flex;
+  background-image: url(/IMG/google.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+.samsumg-d {
+
+}
+.code-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
+.code {
+  display: flex;
+  width: 100%;
+  background-size: cover;
+  align-items: start;
+  justify-content: end;
+}
+.code-d {
+  display: flex;
+  width: 400px;
+  height: 300px;
+  background-image: url(/IMG/frame.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  transform: translateY(-90%);
+}
+
+
 @media (max-width: 768px) {
 
   header {
@@ -968,6 +1061,19 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
   }
+
+  /*Icone de porcentagem*/
+
+  .rounded-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  
 
   .box-azul {
     justify-content: left;
@@ -1155,7 +1261,7 @@ input[type="radio"] {
     top: 50%;
     width: 27px;
     height: 44px;
-    transform: translateY(1800%);
+    transform: translateY(2200%);
 
     z-index: 10;
     cursor: pointer;

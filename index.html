@@ -38,17 +38,26 @@
           <img src="./IMG/logo_tcc.png" alt="" />
           <a href="./index.html">E-PLANNER</a>
         </div>
-        <button class="menu-toggle" aria-label="Menu Toggle">
-          <span class="icon"></span>
-        </button>
-        
-        <div class="sidebar">
-          <a href="#inicio" class="nav-list">Início</a>
-          <a href="#recursos" class="nav-list">Recursos</a>
-          <a href="#quem" class="nav-list">Quem somos</a>
-          <a href="#footer" class="nav-list">Sobre</a>
-          <a href="./index2.html#download" class="btn-d">Baixe o app</a>
+        <div class="container2">
+          <nav class="nav-bar">
+            <a href="#inicio" class="nav-list">Início</a>
+            <a href="#recursos" class="nav-list">Recursos</a>
+            <a href="#quem" class="nav-list">Quem somos</a>
+            <a href="#footer" class="nav-list">Sobre</a>
+            <a href="./index2.html#download" class="btn">Baixe o app</a>
+          </nav>
+          <button class="menu-toggle" aria-label="Menu Toggle">
+            <span class="icon"></span>
+          </button>
+          <div class="sidebar">
+            <a href="#inicio" class="nav-list">Início</a>
+            <a href="#recursos" class="nav-list">Recursos</a>
+            <a href="#quem" class="nav-list">Quem somos</a>
+            <a href="#footer" class="nav-list">Sobre</a>
+            <a href="./index2.html#download" class="btn-d">Baixe o app</a>
+          </div>
         </div>
+        
       </header>
       <div class="inicioo">
         <div class="inicio__content">
@@ -537,13 +546,15 @@
     });
   });
 
-    const menuToggle = document.querySelector('.menu-toggle');
-    const sidebar = document.querySelector('.sidebar');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const container = document.querySelector('.container');
+  const sidebar = document.querySelector('.sidebar');
 
-    menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('open');
+  menuToggle.addEventListener('click', () => {
+    container.classList.toggle('open');
     sidebar.classList.toggle('open');
   });
+
 
 
 </script>

@@ -72,6 +72,7 @@ nav {
 .btn:hover {
   background-color: #50af8b;
 }
+
 .logo-d img {
   height: 40px;
 }
@@ -114,7 +115,7 @@ nav {
   justify-content: center;
 }
 
-.logo > img {
+.logo>img {
   height: 50px;
 }
 
@@ -153,7 +154,7 @@ nav {
   flex-direction: column;
 }
 
-.historico-d__container p{
+.historico-d__container p {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -164,6 +165,7 @@ nav {
   display: none;
   background-color: transparent;
   border: none;
+  align-items: end;
   cursor: pointer;
   padding: 10px;
   position: relative;
@@ -184,7 +186,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  display: block;
+  display: flex;
   position: absolute;
   transition: transform 0.3s ease;
 }
@@ -255,10 +257,11 @@ a.btn-d {
     align-items: center;
   }
 
-  .inicio__content > img {
+  .inicio__content>img {
     width: 100%;
-    
+
   }
+
   .inicio__content {
     width: 100%;
     padding-top: 20%;
@@ -266,27 +269,34 @@ a.btn-d {
     justify-content: start;
 
   }
+
   .inicio {
     background-position: -190px 0;
     background-repeat: no-repeat;
   }
+
   .inicioo {
     width: 100%;
   }
-.btn {
-  width: 160px;
-  height: 40px;
-}
+
+  .btn {
+    width: 160px;
+    height: 40px;
+  }
+
   .btn__content {
     width: 100%;
     display: flex;
     align-items: center;
     padding-top: 32px;
-    margin-bottom: 32px ;
+    margin-bottom: 32px;
     justify-content: center;
   }
+
   .menu-toggle {
-    display: block;
+    display: flex;
+    align-items: end;
+    justify-content: end;
   }
 
   .menu-toggle.open .icon:before {
@@ -297,7 +307,7 @@ a.btn-d {
     transform: translateY(0) rotate(-45deg);
   }
 
-  .menu-toggle.open ~ .sidebar {
+  .menu-toggle.open~.sidebar {
     right: 0;
   }
 }

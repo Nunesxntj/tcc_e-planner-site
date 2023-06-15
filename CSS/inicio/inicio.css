@@ -57,15 +57,15 @@ nav {
 
 .btn-d {
   display: flex;
+  width: 100%;
   align-items: center;
+  margin-top: 46%;
   justify-content: center;
   font-size: 1rem;
   font-weight: 600;
   background-color: #2c3c52;
   color: #fff;
-  height: 50px;
-  width: 150px;
-  border-radius: 24px;
+  height: 60px;
   cursor: pointer;
 }
 
@@ -199,28 +199,59 @@ nav {
   transform: translateY(8px);
 }
 
+
 .sidebar {
+  display: none;
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
+  left: -300px;
+  width: 70%;
   height: 100%;
   background-color: rgb(255, 255, 255);
   transition: left 0.3s ease;
   z-index: 9999;
-  padding-top: 60px;
 }
 
 .sidebar.open {
   left: 0;
+  display: block;
 }
 
 .sidebar a {
   display: flex;
-  padding: 10px;
+  border-color: rgb(228, 228, 228);
+  padding: 30px;
   color: #000000;
   text-decoration: none;
   transition: background-color 0.3s ease;
+}
+
+.menu-toggle .icon-d {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  display: block;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.menu-toggle .icon-d:before,
+.menu-toggle .icon-d:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  display: flex;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle .icon-d:before {
+  transform: translateY(-8px);
+}
+
+.menu-toggle .icon-d:after {
+  transform: translateY(8px);
 }
 
 a.btn-d {
@@ -232,6 +263,21 @@ a.btn-d {
   background-color: rgb(255, 255, 255);
 }
 
+.close-sidebar {
+  display: none;
+  padding: unset;
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 1s ease;
+}
+
+.close-sidebar i {
+  display: flex;
+  margin-left: 90%;
+  padding: unset;
+  align-items: end;
+}
 
 @media (max-width: 768px) {
   .text__name {
@@ -308,6 +354,23 @@ a.btn-d {
   }
 
   .menu-toggle.open~.sidebar {
+    right: 0;
+  }
+  .menu-toggle-d {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .menu-toggle-d.open .icon:before {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .menu-toggle-d.open .icon:after {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .menu-toggle-d.open~.sidebar {
     right: 0;
   }
 }

@@ -393,53 +393,6 @@ input[type="radio"] {
   color: #2c3c52;
 }
 
-/* Adicionar regras de mídia para tornar o layout responsivo */
-
-/* Estilos do Swiper */
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Outros estilos de slide */
-}
-
-/* Estilos dos botões de navegação */
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  width: 27px;
-  height: 44px;
-  transform: translateY(2400%);
-
-  z-index: 10;
-  cursor: pointer;
-  background-color: #F7F7F7;
-  color: #000000;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: rgba(231, 231, 231, 0.8);
-}
-
-.swiper-button-next {
-  right: 10px;
-}
-
-.swiper-button-prev {
-  left: 10px;
-}
 
 @media (max-width: 1400px) {
 
@@ -582,52 +535,6 @@ input[type="radio"] {
     height: 40px;
   }
 
-  /* Estilos do Swiper */
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Outros estilos de slide */
-  }
-
-  /* Estilos dos botões de navegação */
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    width: 27px;
-    height: 44px;
-    transform: translateY(1700%);
-
-    z-index: 10;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-  }
-
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .swiper-button-next {
-    right: 10px;
-  }
-
-  .swiper-button-prev {
-    left: 10px;
-  }
-
   .fe__container {
     padding: unset;
     display: flex;
@@ -686,23 +593,4 @@ input[type="radio"] {
     text-align: center;
   }
 
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    width: 27px;
-    height: 44px;
-    transform: translateY(2200%);
-
-    z-index: 10;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-  }
 }

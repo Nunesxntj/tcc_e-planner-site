@@ -50,14 +50,15 @@
             <span class="icon"></span>
           </button>
           <div class="sidebar">
+            <a class="close-sidebar"><i class="fas fa-arrow-left"></i></a>
             <a href="#inicio" class="nav-list">Início</a>
             <a href="#recursos" class="nav-list">Recursos</a>
             <a href="#quem" class="nav-list">Quem somos</a>
             <a href="#footer" class="nav-list">Sobre</a>
-            <a href="./index2.html#download" class="btn-d">Baixe o app</a>
+            <a href="./index2.html#download close-sidebar" class="btn-d">Baixe o app</a>
           </div>
         </div>
-        
+
       </header>
       <div class="inicioo">
         <div class="inicio__content">
@@ -225,7 +226,7 @@
       <div class="box-azul">
         <div class="text-azul">
           <h4> Consiga sua indepêndencia </h4>
-          <h2> com o APP da e-planner </h2>
+          <h2> com o APP da E-Planner </h2>
         </div>
         <div class="p-azul">
           <p>
@@ -545,17 +546,24 @@
       },
     });
   });
-
   const menuToggle = document.querySelector('.menu-toggle');
-  const container = document.querySelector('.container');
-  const sidebar = document.querySelector('.sidebar');
+const sidebar = document.querySelector('.sidebar');
+const closeSidebar = document.querySelector('.close-sidebar');
+const navListItems = document.querySelectorAll('.nav-list');
 
-  menuToggle.addEventListener('click', () => {
-    container.classList.toggle('open');
-    sidebar.classList.toggle('open');
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+});
+
+closeSidebar.addEventListener('click', () => {
+  sidebar.classList.remove('open');
+});
+
+navListItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    sidebar.classList.remove('open');
   });
-
-
+});
 
 </script>
 <script src="./JS/glinder.js"></script>

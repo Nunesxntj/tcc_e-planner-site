@@ -20,7 +20,7 @@
 
 .g-container {
   height: fit-content;
-  width: 36%;
+  width: 40%;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -56,15 +56,11 @@
   margin-bottom: 16px;
 }
 
-.text__g {
-  font-family: 'Inter', Helvetica, sans-serif;
+.icon-g p{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
-  line-height: 30px;
-  margin: unset;
-
+  text-align: left;
+  font-size: 22px;
+  margin: 0;
 }
 
 .seta-g {
@@ -108,6 +104,177 @@
 
 .seta-g {
   width: 20px;
+}
+@media (min-width: 1801px) {
+  .mid__container {
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: start;
+    /* Centralizar verticalmente */
+    justify-content: flex-end;
+    /* Alinhar à esquerda */
+    height: 100vh;
+    /* Definir altura total da tela */
+  }
+  
+  .e__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 25%;
+    justify-content: start;
+    gap: 55%;
+  }
+  
+  .g-container {
+    height: fit-content;
+    width: 36%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .sub__g {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+  
+  .sub__g h2 {
+    display: flex;
+    color: #2c3c52;
+    font-weight: 600;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+  }
+  
+  .sub__g p {
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+  }
+  
+  .icon-g {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4%;
+  }
+  
+  .text__g p{
+    font-family: 'Inter', Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    line-height: 30px;
+    margin: unset;
+  
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Outros estilos de slide */
+  }
+
+  /* Estilos dos botões de navegação */
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    transform: translateY(-4000%);
+    z-index: 10;
+    cursor: pointer;
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: #f5f5f52d;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: #f5f5f52d;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .seta-g {
+    display: flex;
+    align-self: center;
+    width: 16px;
+    height: 20px;
+    font-size: 100px;
+  }
+  
+  
+  
+  .card-g {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .card-gustavo {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titulo-g {
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .titulo-g h4 {
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 80px;
+    color: #2c3c52;
+  }
+  
+  .seta-g {
+    display: flex;
+    width: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -183,7 +350,7 @@
     padding-bottom: 10%;
   }
 
-  .text__g {
+  .text__g p{
     font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
@@ -194,6 +361,8 @@
   .seta-g {
     width: 20px;
   }
+
+  
 
   .sobre__col {
     display: row;
@@ -219,4 +388,5 @@
     font-size: 40px;
     color: #2c3c52;
   }
+  
 }

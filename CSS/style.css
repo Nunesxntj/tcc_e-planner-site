@@ -40,6 +40,19 @@ header {
   background-color: transparent;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 80px;
+  background-color: #02cb7f;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 999999;
+}
 .logo img {
   height: 40px;
 }
@@ -233,6 +246,19 @@ input[type="radio"] {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #02cb7f;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 999999;
+  }
 }
 
 @media (max-width: 600px) {
@@ -391,93 +417,6 @@ input[type="radio"] {
   font-family: 'Inter', Helvetica, sans-serif;
   font-size: 52px;
   color: #2c3c52;
-}
-
-
-@media (max-width: 1400px) {
-
-  .azul-container {
-    background-image: url(../img/background/gr-1-vertical.png);
-    background-size: 80vw 100%;
-    height: auto;
-    width: 100vw;
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .box-azul {
-    height: auto;
-    width: 90vw;
-    border-radius: 22px;
-  }
-
-  .text-azul h4 {
-    font-weight: bold;
-    display: flex;
-    color: #fff;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    padding-left: 20px;
-  }
-
-  .text-azul h2 {
-    font-weight: bold;
-    display: flex;
-    color: #fff;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    padding-left: 20px;
-  }
-
-  .p-azul {
-    display: flex;
-    color: #fff;
-    width: 100%;
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
-  .p-azul p {
-    line-height: 24px;
-  }
-
-  .btn-azul {
-    background-color: #51D1FF;
-    display: flex;
-    color: #000;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    margin-top: 10px;
-    width: 120px;
-    height: 50px;
-  }
-
-  .quatro-azul {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: baseline;
-    justify-content: left;
-    padding: 20px 20px;
-
-  }
-
-  .icon-azul {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    display: flex;
-    font-size: 18px;
-    width: 250px;
-    height: 100px;
-    color: #fff;
-  }
-
-  .icon-container {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 @media (max-width: 768px) {

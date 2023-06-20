@@ -16,6 +16,10 @@
   height: 120vh;
   z-index: 2;
 }
+.inicio__content img {
+  display: flex;
+  width: 50%;
+}
 
 .inicio-d {
   width: 100%;

@@ -397,11 +397,46 @@ input[type="radio"] {
 
 
 .fer-icon:hover {
+  width: 600px !important;
   filter: grayscale(0%);
   background-color: #FFF;
   border: 1.5px transparent;
+  align-items: center;
+  justify-content: start;
+  font-weight: 600;
   transition: ease;
   transition-duration: 0.5s;
+}
+
+
+.fer-icon:hover img{
+  width: 200px;
+  display: flex;
+}
+
+.fer-icon:hover p{
+  padding-left: 20px;
+  display: block;
+  font-size: 20px;
+  margin: -30px;
+  margin-right: 20px;
+  text-align: justify;
+}
+.fer-icon:hover p.icon-text-m {
+  padding-left: 40px;
+  display: block;
+  font-size: 20px;
+  margin: -30px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+
+.icon-text {
+  display: none;
+}
+.icon-text-m {
+  display: none;
 }
 
 .titulo-gg {
@@ -493,28 +528,11 @@ input[type="radio"] {
     width: fit-content;
   }
 
-  .fer-icon {
-    outline: none;
-    display: flex;
-    height: fit-content;
-    filter: grayscale(100%);
-    border-radius: 0;
-    border: none;
-    background-color: #f7f7f7;
-  }
-
-
-  .fer-icon:hover {
-    outline: none;
-    filter: grayscale(0%);
-    background-color: #FFF;
-    transition: unset;
-    transition-duration: unset;
-  }
 
   .fer--icon {
     width: 70%;
   }
+
 
   .titulo-gg {
     background-color: #F7F7F7;

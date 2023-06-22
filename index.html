@@ -359,21 +359,29 @@
         <div class="fer">
           <div class="fer-icon">
             <img class="fer--icon" src="IMG/js (1).png" alt="dddd" style="color: #f00;">
+            <p class="icon-text">JavaScript: </br>
+               Linguagem de programação versátil para desenvolvimento web e mobile.</p>
           </div>
         </div>
         <div class="fer">
-          <div class="fer-icon">
+          <div class="fer-icon mysql">
             <img class="fer--icon" src="IMG/mysql-removebg-preview.png" alt="cccc">
+            <p class="icon-text-m">MySQL: </br>
+              Sistema de gerenciamento de banco de dados relacional.</p>
           </div>
         </div>
         <div class="fer">
           <div class="fer-icon">
             <img class="fer--icon" src="IMG/react.png" alt="bbbb">
+            <p class="icon-text">React Native: <br>
+              Biblioteca JavaScript para construção de interfaces de usuário interativas.</p>
           </div>
         </div>
         <div class="fer">
           <div class="fer-icon">
             <img class="fer--icon" src="IMG/expo-removebg-preview.png" alt="aaaa">
+            <p class="icon-text">Expo: </br>
+              Plataforma para criação de aplicativos móveis com React Native, facilitando o desenvolvimento multiplataforma.</p>
           </div>
         </div>
       </div>
@@ -582,25 +590,25 @@
       button.style.display = window.pageYOffset > 100 ? 'block' : 'none';
     });
   });
-    // JavaScript para adicionar a classe "visible" aos elementos quando eles estiverem visíveis na tela
-    document.addEventListener("DOMContentLoaded", function() {
-      const fadeIns = document.querySelectorAll(".fade-in");
-      const options = {
-        rootMargin: "0px",
-        threshold: 0.2 // Ajuste o valor de acordo com sua preferência
-      };
-      const observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, options);
-      fadeIns.forEach(function(fadeIn) {
-        observer.observe(fadeIn);
+  // JavaScript para adicionar a classe "visible" aos elementos quando eles estiverem visíveis na tela
+  document.addEventListener("DOMContentLoaded", function () {
+    const fadeIns = document.querySelectorAll(".fade-in");
+    const options = {
+      rootMargin: "0px",
+      threshold: 0.2 // Ajuste o valor de acordo com sua preferência
+    };
+    const observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
       });
+    }, options);
+    fadeIns.forEach(function (fadeIn) {
+      observer.observe(fadeIn);
     });
+  });
 </script>
 <script src="./JS/glinder.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
